@@ -1,4 +1,4 @@
-function ChatTemplate({ children }: any) {
+function ChatTemplate({ children }) {
     return <div>{children}</div>;
 }
 

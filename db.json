@@ -2,7 +2,7 @@
   "chatRooms": [
     {
       "id": 1,
-      "roomTitle": "대화방1",
+      "roomTitle": "방1",
       "author": "감자",
       "lastMessageTime": "09:12 PM"
     },
@@ -12,9 +12,203 @@
       "id": 2
     },
     {
-      "roomTitle": "123123123",
+      "roomTitle": "방3",
       "createdAt": 1687968392969,
       "id": 3
+    },
+    {
+      "rooms": "4",
+      "createdAt": 1687972877373,
+      "id": 4
+    },
+    {
+      "params": {
+        "roomTitle": "4",
+        "createdAt": 1687973008958
+      },
+      "id": 5
+    },
+    {
+      "params": {
+        "roomTitle": "5",
+        "createdAt": 1687973011568
+      },
+      "id": 6
+    },
+    {
+      "params": {
+        "roomTitle": "6",
+        "createdAt": 1687973012498
+      },
+      "id": 7
+    },
+    {
+      "params": {
+        "roomTitle": "7",
+        "createdAt": 1687973013180
+      },
+      "id": 8
+    },
+    {
+      "params": {
+        "roomTitle": "8",
+        "createdAt": 1687973013990
+      },
+      "id": 9
+    },
+    {
+      "params": {
+        "roomTitle": "9",
+        "createdAt": 1687973015086
+      },
+      "id": 10
+    },
+    {
+      "params": {
+        "roomTitle": "10",
+        "createdAt": 1687973017568
+      },
+      "id": 11
+    },
+    {
+      "params": {
+        "roomTitle": "4",
+        "createdAt": 1687973069695
+      },
+      "id": 12
+    },
+    {
+      "params": {
+        "roomTitle": "5",
+        "createdAt": 1687973070796
+      },
+      "id": 13
+    },
+    {
+      "params": {
+        "roomTitle": "6",
+        "createdAt": 1687973071638
+      },
+      "id": 14
+    },
+    {
+      "params": {
+        "roomTitle": "7",
+        "createdAt": 1687973072275
+      },
+      "id": 15
+    },
+    {
+      "params": {
+        "roomTitle": "8",
+        "createdAt": 1687973073189
+      },
+      "id": 16
+    },
+    {
+      "params": {
+        "roomTitle": "4",
+        "createdAt": 1687973103454
+      },
+      "id": 17
+    },
+    {
+      "params": {
+        "roomTitle": "5",
+        "createdAt": 1687973104788
+      },
+      "id": 18
+    },
+    {
+      "params": {
+        "roomTitle": "6",
+        "createdAt": 1687973105703
+      },
+      "id": 19
+    },
+    {
+      "params": {
+        "roomTitle": "7",
+        "createdAt": 1687973106851
+      },
+      "id": 20
+    },
+    {
+      "params": {
+        "roomTitle": "1",
+        "createdAt": 1687973131961
+      },
+      "id": 21
+    },
+    {
+      "params": {
+        "roomTitle": "2",
+        "createdAt": 1687973132606
+      },
+      "id": 22
+    },
+    {
+      "params": {
+        "roomTitle": "4",
+        "createdAt": 1687973133331
+      },
+      "id": 23
+    },
+    {
+      "params": {
+        "roomTitle": "5",
+        "createdAt": 1687973133847
+      },
+      "id": 24
+    },
+    {
+      "params": {
+        "roomTitle": "6",
+        "createdAt": 1687973134251
+      },
+      "id": 25
+    },
+    {
+      "params": {
+        "roomTitle": "7",
+        "createdAt": 1687973134583
+      },
+      "id": 26
+    },
+    {
+      "params": {
+        "roomTitle": "8",
+        "createdAt": 1687973134873
+      },
+      "id": 27
+    },
+    {
+      "params": {
+        "roomTitle": "9",
+        "createdAt": 1687973135243
+      },
+      "id": 28
+    },
+    {
+      "params": {
+        "roomTitle": "0",
+        "createdAt": 1687973135797
+      },
+      "id": 29
+    },
+    {
+      "params": {
+        "roomTitle": "113",
+        "createdAt": 1687973136554
+      },
+      "id": 30
+    },
+    {
+      "params": {
+        "roomTitle": "",
+        "createdAt": 1687973138434
+      },
+      "id": 31
     }
   ],
   "comments": [
