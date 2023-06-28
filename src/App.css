@@ -1,0 +1,25 @@
+.main_container {
+    display: flex;
+}
+
+.chat_contents {
+    width: 500px;
+    height: 100vh;
+    margin: 10px;
+    background-color: tomato;
+}
+
+.chat_list_logo_group {
+    display: flex;
+}
+
+.chat_list_search_group {
+    display: flex;
+}
+
+.chat_room_item {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: thistle;
+}

@@ -1,0 +1,30 @@
+{
+  "chatRooms": [
+    {
+      "id": 1,
+      "roomTitle": "대화방1",
+      "author": "감자",
+      "lastMessageTime": "09:12 PM"
+    },
+    {
+      "roomTitle": "방2",
+      "createdAt": 1687967849843,
+      "id": 2
+    },
+    {
+      "roomTitle": "123123123",
+      "createdAt": 1687968392969,
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
