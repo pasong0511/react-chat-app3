@@ -4,13 +4,13 @@ import axios from "axios";
 
 function ChatHistory({ roomData }) {
     const { roomId, roomName } = roomData;
-    const [chat, setChat] = useState();
+    const [chat, setChat] = useState({});
 
     useEffect(() => {
         const fetchChatHistory = (id) => {
             console.log("API 요청 함수 실행🧀🧀🧀🧀🧀🧀");
             axios
-                .get(`http://localhost:4001/chats/1`)
+                .get(`http://localhost:4001/chats/${id}`)
                 .then((res) => {
                     console.log("서버에서 가져온 데이터", res.data);
                     setChat(res.data);
@@ -19,36 +19,40 @@ function ChatHistory({ roomData }) {
         };
 
         fetchChatHistory(roomId);
-    }, []);
+    }, [roomId]);
 
-    console.log("대화내용", chat);
+    // console.log("대화내용", chat);
+    // console.log("대화내용에 대한 id", chat.id);
+    // console.log("대화내용에 대한 id", chat.messages);
+    //console.log(chat.message);
 
     if (!roomId) {
         return;
     }
 
-    console.log(roomId, " 이용해서 메시지 가져오기 api 요청");
+    if (!chat.message) {
+        return;
+    }
 
-    // if (!chat.messages) {
-    //     return;
-    // }
+    console.log("🥐🥐🥐🥐🥐🥐대화내용 출력!!", chat);
 
     return (
         <div className="chatroom">
-            {/* {chat.messages.map((message, index) => (
-                <div
-                    key={index}
-                    className={`message ${
-                        message.username === "Lee" ? "message-own" : ""
-                    }`}
-                >
-                    <h5>
-                        {message.username} (
-                        {new Date(message.timestamp).toLocaleTimeString()}):
-                    </h5>
-                    <p>{message.message}</p>
-                </div>
-            ))} */}
+            {chat.messages.map(
+                (message, index) => console.log("메시지!#", message)
+                // <div
+                //     key={index}
+                //     className={`message ${
+                //         message.username === "Lee" ? "message-own" : ""
+                //     }`}
+                // >
+                //     <h5>
+                //         {message.username} (
+                //         {new Date(message.timestamp).toLocaleTimeString()}):
+                //     </h5>
+                //     <p>{message.message}</p>
+                // </div>
+            )}
         </div>
     );
 }
