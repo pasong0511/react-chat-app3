@@ -1,11 +1,10 @@
 import React from "react";
 
-const ChatRoomItem = () => {
+const ChatRoomItem = ({ roomTitle }) => {
     return (
-        <li className="chat_room_item">
-            <div>채팅방</div>
-            <div>대화내용</div>
-        </li>
+        <>
+            <div>{roomTitle}</div>
+        </>
     );
 };
 

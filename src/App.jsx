@@ -1,48 +1,86 @@
-import React, { useState, useEffect, ChangeEvent, FormEvent } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 
 import ChatTemplate from "./components/ChatTemplate";
 import ChatList from "./components/ChatList";
 import ChatCreate from "./components/ChatCreate";
+import ChatHistory from "./components/ChatHistory";
+
+import "./App.css";
+import ChatRoomModal from "./components/ChatModal";
+import ChatInput from "./components/ChatInput";
 
 function App() {
     const [rooms, setRooms] = useState([]);
+    const [currentShowRoom, setCurrentShowRoom] = useState({});
 
-    const createChat = async (chatRoom) => {
-        let params = {
-            roomTitle: chatRoom,
+    const fetchChatRooms = () => {
+        axios.get(`http://localhost:4001/chatRooms`).then((res) => {
+            setRooms(res.data);
+        });
+    };
+
+    const handleCreateChatRoom = (roomTitle) => {
+        let newRoom = {
+            roomTitle,
             createdAt: Date.now(),
         };
-
         axios
             .post("http://localhost:4001/chatRooms", {
-                params,
+                roomTitle,
+                createdAt: Date.now(),
             })
             .then(() => {
-                console.log("성공");
-                setRooms([...rooms, params]);
+                setRooms([...rooms, newRoom]);
             })
             .catch((e) => {
                 console.error(e);
             });
     };
 
-    useEffect(() => {
-        const fetchTodos = async () => {
-            axios.get(`http://localhost:4001/chatRooms`).then((res) => {
-                setRooms(res.data);
-            });
-        };
+    const onClose = () => {
+        console.log("닫기 버튼 클릭, 대화방 나가기");
+    };
 
-        fetchTodos();
+    const onCreateMessage = (message) => {
+        console.log("메시지 입력-->", message);
+    };
+
+    useEffect(() => {
+        fetchChatRooms();
     }, []);
+
+    const handelClickSelectRoom = (roomId, roomName) => {
+        console.log("🥗채팅 룸 번호", roomId, roomName);
+        setCurrentShowRoom({ roomId, roomName });
+    };
+
+    console.log("선택한 룸 정보", currentShowRoom);
 
     return (
         <div className="App">
-            <ChatTemplate>
-                <ChatCreate onAddChat={createChat} />
-                <ChatList rooms={rooms} />
-            </ChatTemplate>
+            <div className="chat_main">
+                <ChatTemplate>
+                    <div>채팅방</div>
+                    <ChatCreate onCreateChatRoom={handleCreateChatRoom} />
+                    <ChatList
+                        rooms={rooms}
+                        onClickSelectRoom={handelClickSelectRoom}
+                    />
+                </ChatTemplate>
+                <ChatTemplate>
+                    <ChatRoomModal
+                        title={currentShowRoom.roomName}
+                        onClose={onClose}
+                    >
+                        <ChatHistory roomData={currentShowRoom} />
+                        <ChatInput onCreateMessage={onCreateMessage} />
+                    </ChatRoomModal>
+                </ChatTemplate>
+                <ChatTemplate>
+                    <div>멤버방</div>
+                </ChatTemplate>
+            </div>
         </div>
     );
 }

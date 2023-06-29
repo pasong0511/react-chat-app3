@@ -1,10 +1,10 @@
-.main_container {
+.chat_main {
     display: flex;
 }
 
-.chat_contents {
+.chat_content {
     width: 500px;
-    height: 100vh;
+    height: 90vh;
     margin: 10px;
     background-color: tomato;
 }
@@ -22,4 +22,56 @@
     justify-content: space-between;
 
     background-color: thistle;
+}
+
+/* 채팅방룸 */
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: mediumseagreen;
+}
+
+.modal_wrapper {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 100%;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+/*메신저 내용*/
+.chatUI {
+    margin: 20px;
+}
+
+.chatroom {
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.message {
+    padding: 10px 0;
+}
+
+.message:last-child {
+    border-bottom: none;
+}
+
+.message h5 {
+    margin: 0;
+    font-size: 0.9em;
+    color: #888;
+}
+
+.message p {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+}
+
+.message-own {
+    text-align: right;
+}
+
+.message-own h5 {
+    color: #4a4;
 }

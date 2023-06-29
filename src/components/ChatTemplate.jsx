@@ -1,5 +1,5 @@
 function ChatTemplate({ children }) {
-    return <div>{children}</div>;
+    return <div className="chat_content">{children}</div>;
 }
 
 export default ChatTemplate;
