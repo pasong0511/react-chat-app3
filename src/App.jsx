@@ -21,14 +21,17 @@ function App() {
     };
 
     const handleCreateChatRoom = (roomTitle) => {
+        const today = new Date();
+        const createdAt = today.toISOString();
+
         let newRoom = {
             roomTitle,
-            createdAt: Date.now(),
+            createdAt: createdAt,
         };
         axios
             .post("http://localhost:4001/chatRooms", {
                 roomTitle,
-                createdAt: Date.now(),
+                createdAt: createdAt,
             })
             .then(() => {
                 setRooms([...rooms, newRoom]);
@@ -42,8 +45,28 @@ function App() {
         console.log("닫기 버튼 클릭, 대화방 나가기");
     };
 
-    const onCreateMessage = (message) => {
-        console.log("메시지 입력-->", message);
+    const onCreateMessage = (newMessage) => {
+        console.log("메시지 입력-->", newMessage);
+
+        const today = new Date();
+        const createdAt = today.toISOString();
+        const id = currentShowRoom.roomId;
+
+        // let newRoom = {
+        //     message,
+        //     timestamp: createdAt,
+        // };
+        // axios
+        //     .post(`http://localhost:4001/chats`, {
+        //         message,
+        //         createdAt: createdAt,
+        //     })
+        //     .then(() => {
+        //         setRooms([...rooms, newRoom]);
+        //     })
+        //     .catch((e) => {
+        //         console.error(e);
+        //     });
     };
 
     useEffect(() => {
