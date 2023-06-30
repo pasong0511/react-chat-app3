@@ -14,6 +14,8 @@ import ChatHistory from "./components/chats/ChatHistory";
 import ChatRoomModal from "./components/chats/ChatModal";
 
 //멤버
+import MemberModal from "./components/members/MemberModal";
+import MemberList from "./components/members/MemberList";
 
 function App() {
     const [roomLists, setRoomLists] = useState([]); //전체 채팅방 목록
@@ -53,12 +55,10 @@ function App() {
         //db가 없어서 부득이하게 api 두번 쏨
         //1. 채팅방 지우기, 2. 채팅방 데이터 지우기
         axios
-            .delete(
-                `http://localhost:4001/chatRooms/${currentSelectRoom.roomId}`
-            )
+            .delete(`http://localhost:4001/chatRooms/${currentSelectRoom.id}`)
             .then(() => {
                 axios.delete(
-                    `http://localhost:4001/chatMessages/${currentSelectRoom.roomId}`
+                    `http://localhost:4001/chatMessages/${currentSelectRoom.id}`
                 );
 
                 //todo : 삭제 후 컴포넌트 리렌더링
@@ -71,6 +71,7 @@ function App() {
     const handleSendMessage = (newMessage) => {
         const today = new Date();
         const createdAt = today.toISOString();
+        let messages = [];
 
         const saveMessage = {
             user_id: "admin",
@@ -79,28 +80,55 @@ function App() {
             message: newMessage,
         };
 
-        const messages = [...messageData.messages, saveMessage];
+        //메시지가 중간에 이어지면 이게 가능, 하지만 신규로 만들어진 방은 이게 불가능하다 그냥 푸시해야함
+        //중간방이면 이게 가능
 
-        axios
-            .patch(
-                `http://localhost:4001/chatMessages/${currentSelectRoom.roomId}`,
-                {
+        console.log(messageData);
+
+        if (!messageData["messages"]) {
+            //신규 대화
+            messages = [saveMessage];
+            console.log("🎄 신규 메시지값", messages);
+
+            axios
+                .post(`http://localhost:4001/chatMessages`, {
                     messages,
-                }
-            )
-            .then(() => {
-                setMessageData({
-                    id: messageData.id,
-                    messages,
+                })
+                .then(() => {
+                    setMessageData({
+                        id: currentSelectRoom.id,
+                        messages,
+                    });
+                })
+                .catch((e) => {
+                    console.error(e);
                 });
-            })
-            .catch((e) => {
-                console.error(e);
-            });
+        } else {
+            //이어서 대화하기
+            messages = [...messageData.messages, saveMessage];
+            console.log("🎄 이어쓰기 메시지값", messages);
+
+            axios
+                .patch(
+                    `http://localhost:4001/chatMessages/${currentSelectRoom.id}`,
+                    {
+                        messages,
+                    }
+                )
+                .then(() => {
+                    setMessageData({
+                        id: messageData.id,
+                        messages,
+                    });
+                })
+                .catch((e) => {
+                    console.error(e);
+                });
+        }
     };
 
-    const handelClickSelectRoom = (roomId, roomName) => {
-        setCurrentSelectRoom({ roomId, roomName });
+    const handelClickSelectRoom = (id, roomTitle) => {
+        setCurrentSelectRoom({ id, roomTitle });
     };
 
     //채팅방 목록 데이터 패칭
@@ -119,10 +147,12 @@ function App() {
                 .catch((e) => {});
         };
 
-        fetchMessageHistory(currentSelectRoom.roomId);
+        fetchMessageHistory(currentSelectRoom.id);
     }, [currentSelectRoom]);
 
-    console.log(roomLists);
+    console.log("💡 room 상태", roomLists);
+    console.log("💡 messageData 상태", messageData);
+    console.log("💡 currentSelectRoom 상태", currentSelectRoom);
 
     return (
         <div className="App">
@@ -140,7 +170,7 @@ function App() {
                 </ChatTemplate>
                 <ChatTemplate>
                     <ChatRoomModal
-                        title={currentSelectRoom.roomName}
+                        title={currentSelectRoom.roomTitle}
                         handleCloseRoom={handleCloseRoom}
                     >
                         <ChatHistory
@@ -154,7 +184,9 @@ function App() {
                     </ChatRoomModal>
                 </ChatTemplate>
                 <ChatTemplate>
-                    <div>멤버방</div>
+                    <MemberModal title={currentSelectRoom.roomTitle}>
+                        <MemberList currentRoom={currentSelectRoom} />
+                    </MemberModal>
                 </ChatTemplate>
             </div>
         </div>

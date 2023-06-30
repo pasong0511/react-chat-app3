@@ -3,8 +3,6 @@ import { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 
 function ChatHistory({ roomData, chat }) {
-    const { roomId, roomName } = roomData;
-
     return (
         <div className="chatroom">
             {chat.messages?.map((message, index) => (
