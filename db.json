@@ -34,6 +34,16 @@
             "roomTitle": "123131",
             "createdAt": 1688042760594,
             "id": 7
+        },
+        {
+            "roomTitle": "12313",
+            "createdAt": 1688083784942,
+            "id": 8
+        },
+        {
+            "roomTitle": "11",
+            "createdAt": 1688083785828,
+            "id": 9
         }
     ],
     "chats": [
@@ -48,7 +58,7 @@
                 },
                 {
                     "user_id": "456",
-                    "username": "Lee",
+                    "username": "Song",
                     "timestamp": "2023-06-29T14:31:00Z",
                     "message": "안녕하세요, Kim님!"
                 },
@@ -60,7 +70,7 @@
                 },
                 {
                     "user_id": "456",
-                    "username": "Lee",
+                    "username": "Song",
                     "timestamp": "2023-06-29T14:33:00Z",
                     "message": "네, 정말 좋습니다!"
                 }
@@ -94,7 +104,7 @@
                 },
                 {
                     "user_id": "456",
-                    "username": "Lee",
+                    "username": "Song",
                     "timestamp": "2023-06-29T14:31:00Z",
                     "message": "순대"
                 },
@@ -106,7 +116,7 @@
                 },
                 {
                     "user_id": "456",
-                    "username": "Lee",
+                    "username": "Song",
                     "timestamp": "2023-06-29T14:33:00Z",
                     "message": "감자튀김"
                 }
@@ -123,7 +133,7 @@
                 },
                 {
                     "user_id": "456",
-                    "username": "Lee",
+                    "username": "Song",
                     "timestamp": "2023-06-29T14:31:00Z",
                     "message": "딸기"
                 },
@@ -135,7 +145,7 @@
                 },
                 {
                     "user_id": "456",
-                    "username": "Lee",
+                    "username": "Song",
                     "timestamp": "2023-06-29T14:33:00Z",
                     "message": "체리"
                 }

@@ -9,10 +9,6 @@ const ChatRoomModal = ({ title, onClose, onSaveData, children }) => {
                     </button>
                 </header>
                 <div className="modal_content">{children}</div>
-                <footer>
-                    <button onClick={onSaveData}>확인</button>
-                    <button onClick={onClose}>취소</button>
-                </footer>
             </div>
         </div>
     );

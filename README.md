@@ -36,3 +36,4 @@ https://www.notion.so/React-Typescript-c8911c84700543beba484f5e8f1b9d3f
 ![chat_image](./assets/chat_image.png)
 
 npm install -g json-server
+npm install -g json-server
