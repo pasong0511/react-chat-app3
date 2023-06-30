@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-function InputTxt({ onChangeTxt }) {
+function InputTxt({ onChangeTxt, placeholderValue }) {
     const [value, setValue] = useState("");
 
     const handleInputChange = (e) => {
@@ -22,7 +22,8 @@ function InputTxt({ onChangeTxt }) {
                         autoFocus
                         onChange={handleInputChange}
                         value={value}
-                        placeholder="메시지입력"
+                        placeholder={placeholderValue}
+                        className="txt-input"
                     ></input>
                     <button onClick={handelCreateMessage}>입력</button>
                 </form>

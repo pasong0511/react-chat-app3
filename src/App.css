@@ -17,11 +17,9 @@
     display: flex;
 }
 
-.chat_room_item {
-    display: flex;
-    justify-content: space-between;
-
-    background-color: thistle;
+.chat-room-item {
+    padding: 12px;
+    border-bottom: 1px solid rgb(239, 239, 239);
 }
 
 /* 채팅방룸 */
@@ -78,4 +76,21 @@
 
 .message-own h5 {
     color: #4a4;
+}
+
+/*다시 명명 짓기*/
+.content-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.member-name-item {
+    padding: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(239, 239, 239);
+}
+
+.txt-input {
+    width: 80%;
+    margin-top: 10px;
 }

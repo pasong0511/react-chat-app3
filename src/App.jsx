@@ -11,7 +11,7 @@ import ChatRoomList from "./components/rooms/ChatRoomList";
 
 //채팅 메시지
 import ChatHistory from "./components/chats/ChatHistory";
-import ChatRoomModal from "./components/chats/ChatModal";
+import ChatRoomLayout from "./components/chats/ChatLayout";
 
 //멤버
 import MemberModal from "./components/members/MemberModal";
@@ -74,7 +74,7 @@ function App() {
         let messages = [];
 
         const saveMessage = {
-            user_id: "admin",
+            userId: "admin",
             username: "Song",
             timestamp: createdAt,
             message: newMessage,
@@ -158,10 +158,9 @@ function App() {
         <div className="App">
             <div className="chat_main">
                 <ChatTemplate>
-                    <div>채팅방</div>
                     <InputTxt
                         onChangeTxt={handleCreateChatRoom}
-                        value={"채팅방 이름 입력 후 엔터"}
+                        placeholderValue={"채팅방 이름 입력 후 엔터"}
                     />
                     <ChatRoomList
                         rooms={roomLists}
@@ -169,7 +168,8 @@ function App() {
                     />
                 </ChatTemplate>
                 <ChatTemplate>
-                    <ChatRoomModal
+                    <ChatRoomLayout
+                        currentSelectRoom={currentSelectRoom}
                         title={currentSelectRoom.roomTitle}
                         handleCloseRoom={handleCloseRoom}
                     >
@@ -179,14 +179,9 @@ function App() {
                         />
                         <InputTxt
                             onChangeTxt={handleSendMessage}
-                            value={"메시지 입력 후 엔터"}
+                            placeholderValue={"메시지 입력 후 엔터"}
                         />
-                    </ChatRoomModal>
-                </ChatTemplate>
-                <ChatTemplate>
-                    <MemberModal title={currentSelectRoom.roomTitle}>
-                        <MemberList currentRoom={currentSelectRoom} />
-                    </MemberModal>
+                    </ChatRoomLayout>
                 </ChatTemplate>
             </div>
         </div>

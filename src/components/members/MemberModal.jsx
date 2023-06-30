@@ -1,14 +1,12 @@
 const MemberModal = ({ title, children }) => {
     return (
         <div className="modal">
-            <div className="modal_wrapper">
-                <header>
-                    <div className="modal_header_group">
-                        <h1>{title}</h1>
-                    </div>
-                </header>
-                <div className="modal_content">{children}</div>
-            </div>
+            <header>
+                <div className="modal_header_group">
+                    <h1 className="content-title">{title}</h1>
+                </div>
+            </header>
+            <div className="modal_content">{children}</div>
         </div>
     );
 };

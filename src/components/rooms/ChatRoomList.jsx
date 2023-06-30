@@ -12,7 +12,7 @@ function ChatRoomList({ rooms, onClickSelectRoom }) {
         <ul>
             {rooms.map((room, index) => (
                 <li
-                    className="chat_room_item"
+                    className="chat-room-item"
                     key={index}
                     onClick={() => onClickSelectRoom(room.id, room.roomTitle)}
                 >

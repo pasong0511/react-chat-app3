@@ -96,49 +96,49 @@
             "id": 1,
             "messages": [
                 {
-                    "user_id": "123",
+                    "userId": "123",
                     "username": "Kim",
                     "timestamp": "2023-06-29T14:30:00Z",
                     "message": "떡복이"
                 },
                 {
-                    "user_id": "456",
+                    "userId": "456",
                     "username": "Song",
                     "timestamp": "2023-06-29T14:31:00Z",
                     "message": "순대"
                 },
                 {
-                    "user_id": "123",
+                    "userId": "123",
                     "username": "Kim",
                     "timestamp": "2023-06-29T14:32:00Z",
                     "message": "어묵"
                 },
                 {
-                    "user_id": "456",
+                    "userId": "456",
                     "username": "Song",
                     "timestamp": "2023-06-29T14:33:00Z",
                     "message": "감자튀김"
                 },
                 {
-                    "user_id": "admin",
+                    "userId": "admin",
                     "username": "Song",
                     "timestamp": "2023-06-30T04:42:38.372Z",
                     "message": "아딸"
                 },
                 {
-                    "user_id": "admin",
+                    "userId": "admin",
                     "username": "Song",
                     "timestamp": "2023-06-30T05:58:25.145Z",
                     "message": "111"
                 },
                 {
-                    "user_id": "admin",
+                    "userId": "admin",
                     "username": "Song",
                     "timestamp": "2023-06-30T06:03:41.266Z",
                     "message": "222"
                 },
                 {
-                    "user_id": "admin",
+                    "userId": "admin",
                     "username": "Song",
                     "timestamp": "2023-06-30T06:03:44.658Z",
                     "message": "444"
@@ -149,43 +149,43 @@
             "id": 2,
             "messages": [
                 {
-                    "user_id": "789",
+                    "userId": "789",
                     "username": "Park",
                     "timestamp": "2023-06-29T15:00:00Z",
                     "message": "여러분, 안녕하세요!"
                 },
                 {
-                    "user_id": "1011",
+                    "userId": "1011",
                     "username": "Choi",
                     "timestamp": "2023-06-29T15:01:00Z",
                     "message": "안녕하세요, Park님!"
                 },
                 {
-                    "user_id": "admin",
+                    "userId": "admin",
                     "username": "Song",
                     "timestamp": "2023-06-30T02:27:51.428Z",
                     "message": "뽀로로"
                 },
                 {
-                    "user_id": "admin",
+                    "userId": "admin",
                     "username": "Song",
                     "timestamp": "2023-06-30T05:59:44.970Z",
                     "message": "루피"
                 },
                 {
-                    "user_id": "admin",
+                    "userId": "admin",
                     "username": "Song",
                     "timestamp": "2023-06-30T06:01:10.096Z",
                     "message": "포비"
                 },
                 {
-                    "user_id": "admin",
+                    "userId": "admin",
                     "username": "Song",
                     "timestamp": "2023-06-30T06:25:49.825Z",
                     "message": "바나나"
                 },
                 {
-                    "user_id": "admin",
+                    "userId": "admin",
                     "username": "Song",
                     "timestamp": "2023-06-30T08:33:29.468Z",
                     "message": "포도"
@@ -195,19 +195,19 @@
         {
             "messages": [
                 {
-                    "user_id": "admin",
+                    "userId": "admin",
                     "username": "Song",
                     "timestamp": "2023-06-30T07:27:31.187Z",
                     "message": "새로운방 새로운 마음"
                 },
                 {
-                    "user_id": "admin",
+                    "userId": "admin",
                     "username": "Song",
                     "timestamp": "2023-06-30T08:05:46.995Z",
                     "message": "ㅋㅋㅋ"
                 },
                 {
-                    "user_id": "admin",
+                    "userId": "admin",
                     "username": "Song",
                     "timestamp": "2023-06-30T08:05:48.981Z",
                     "message": "ㅎㅎ"
@@ -218,7 +218,7 @@
         {
             "messages": [
                 {
-                    "user_id": "admin",
+                    "userId": "admin",
                     "username": "Song",
                     "timestamp": "2023-06-30T07:35:33.674Z",
                     "message": "1111"
@@ -229,7 +229,7 @@
         {
             "messages": [
                 {
-                    "user_id": "admin",
+                    "userId": "admin",
                     "username": "Song",
                     "timestamp": "2023-06-30T07:38:03.148Z",
                     "message": "하이후에옿"
@@ -240,7 +240,7 @@
         {
             "messages": [
                 {
-                    "user_id": "admin",
+                    "userId": "admin",
                     "username": "Song",
                     "timestamp": "2023-06-30T07:39:09.169Z",
                     "message": "세균맨"
@@ -251,7 +251,7 @@
         {
             "messages": [
                 {
-                    "user_id": "admin",
+                    "userId": "admin",
                     "username": "Song",
                     "timestamp": "2023-06-30T08:07:00.697Z",
                     "message": "456"
@@ -265,27 +265,27 @@
             "id": 1,
             "members": [
                 {
-                    "user_id": "admin",
+                    "userId": "admin",
                     "username": "Song"
                 },
                 {
-                    "user_id": "루피",
+                    "userId": "루피",
                     "username": "루피"
                 },
                 {
-                    "user_id": "나미",
+                    "userId": "나미",
                     "username": "나미"
                 },
                 {
-                    "user_id": "상디",
+                    "userId": "상디",
                     "username": "상디"
                 },
                 {
-                    "user_id": "브록",
+                    "userId": "브록",
                     "username": "브록"
                 },
                 {
-                    "user_id": "로빈",
+                    "userId": "로빈",
                     "username": "로빈"
                 }
             ]
@@ -294,19 +294,19 @@
             "id": 2,
             "members": [
                 {
-                    "user_id": "admin",
+                    "userId": "admin",
                     "username": "Song"
                 },
                 {
-                    "user_id": "어피치",
+                    "userId": "어피치",
                     "username": "어피치"
                 },
                 {
-                    "user_id": "라이언",
+                    "userId": "라이언",
                     "username": "라이언"
                 },
                 {
-                    "user_id": "죠르디",
+                    "userId": "죠르디",
                     "username": "상디"
                 }
             ]
