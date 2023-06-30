@@ -7,7 +7,6 @@ function ChatList({ rooms, onClickSelectRoom }) {
     if (!rooms) {
         return;
     }
-    console.log("컴포넌트왓음", rooms);
 
     return (
         <ul>

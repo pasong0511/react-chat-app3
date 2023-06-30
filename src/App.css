@@ -38,6 +38,10 @@
     border-radius: 8px;
 }
 
+.modal_header_group {
+    display: flex;
+}
+
 /*메신저 내용*/
 .chatUI {
     margin: 20px;

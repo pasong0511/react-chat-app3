@@ -1,22 +1,28 @@
 import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
-
-import ChatTemplate from "./components/ChatTemplate";
-import ChatList from "./components/ChatList";
-import ChatCreate from "./components/ChatCreate";
-import ChatHistory from "./components/ChatHistory";
-
 import "./App.css";
-import ChatRoomModal from "./components/ChatModal";
-import ChatInput from "./components/ChatInput";
+
+//공통
+import ChatTemplate from "./components/share/ChatTemplate";
+import InputTxt from "./components/share/input/InputTxt";
+
+//채팅방
+import ChatList from "./components/rooms/ChatList";
+
+//채팅 메시지
+import ChatHistory from "./components/chats/ChatHistory";
+import ChatRoomModal from "./components/chats/ChatModal";
+
+//멤버
 
 function App() {
-    const [rooms, setRooms] = useState([]);
-    const [currentShowRoom, setCurrentShowRoom] = useState({});
+    const [roomLists, setRoomLists] = useState([]); //전체 채팅방 목록
+    const [messageData, setMessageData] = useState({}); //채팅방에 1개에 따른 메시지 데이터
+    const [currentSelectRoom, setCurrentSelectRoom] = useState({}); //헌재 선택한 룸
 
     const fetchChatRooms = () => {
         axios.get(`http://localhost:4001/chatRooms`).then((res) => {
-            setRooms(res.data);
+            setRoomLists(res.data);
         });
     };
 
@@ -34,70 +40,117 @@ function App() {
                 createdAt: createdAt,
             })
             .then(() => {
-                setRooms([...rooms, newRoom]);
+                console.log("🚗🚗🚗🚗🚗rooms", roomLists, newRoom);
+                //newRoom에 방 id 추가해야함
+                setRoomLists([...roomLists, newRoom]);
             })
             .catch((e) => {
                 console.error(e);
             });
     };
 
-    const onClose = () => {
-        console.log("닫기 버튼 클릭, 대화방 나가기");
+    const handleCloseRoom = () => {
+        //db가 없어서 부득이하게 api 두번 쏨
+        //1. 채팅방 지우기, 2. 채팅방 데이터 지우기
+        axios
+            .delete(
+                `http://localhost:4001/chatRooms/${currentSelectRoom.roomId}`
+            )
+            .then(() => {
+                axios.delete(
+                    `http://localhost:4001/chatMessages/${currentSelectRoom.roomId}`
+                );
+
+                //todo : 삭제 후 컴포넌트 리렌더링
+            })
+            .catch((e) => {
+                console.error(e);
+            });
     };
 
-    const onCreateMessage = (newMessage) => {
-        console.log("메시지 입력-->", newMessage);
-
+    const handleSendMessage = (newMessage) => {
         const today = new Date();
         const createdAt = today.toISOString();
-        const id = currentShowRoom.roomId;
 
-        // let newRoom = {
-        //     message,
-        //     timestamp: createdAt,
-        // };
-        // axios
-        //     .post(`http://localhost:4001/chats`, {
-        //         message,
-        //         createdAt: createdAt,
-        //     })
-        //     .then(() => {
-        //         setRooms([...rooms, newRoom]);
-        //     })
-        //     .catch((e) => {
-        //         console.error(e);
-        //     });
+        const saveMessage = {
+            user_id: "admin",
+            username: "Song",
+            timestamp: createdAt,
+            message: newMessage,
+        };
+
+        const messages = [...messageData.messages, saveMessage];
+
+        axios
+            .patch(
+                `http://localhost:4001/chatMessages/${currentSelectRoom.roomId}`,
+                {
+                    messages,
+                }
+            )
+            .then(() => {
+                setMessageData({
+                    id: messageData.id,
+                    messages,
+                });
+            })
+            .catch((e) => {
+                console.error(e);
+            });
     };
 
+    const handelClickSelectRoom = (roomId, roomName) => {
+        setCurrentSelectRoom({ roomId, roomName });
+    };
+
+    //채팅방 목록 데이터 패칭
     useEffect(() => {
         fetchChatRooms();
     }, []);
 
-    const handelClickSelectRoom = (roomId, roomName) => {
-        console.log("🥗채팅 룸 번호", roomId, roomName);
-        setCurrentShowRoom({ roomId, roomName });
-    };
+    //채팅방 대화정보 데이터 패칭
+    useEffect(() => {
+        const fetchMessageHistory = (id) => {
+            axios
+                .get(`http://localhost:4001/chatMessages/${id}`)
+                .then((res) => {
+                    setMessageData(res.data);
+                })
+                .catch((e) => {});
+        };
 
-    console.log("선택한 룸 정보", currentShowRoom);
+        fetchMessageHistory(currentSelectRoom.roomId);
+    }, [currentSelectRoom]);
+
+    console.log(roomLists);
 
     return (
         <div className="App">
             <div className="chat_main">
                 <ChatTemplate>
                     <div>채팅방</div>
-                    <ChatCreate onCreateChatRoom={handleCreateChatRoom} />
+                    <InputTxt
+                        onChangeTxt={handleCreateChatRoom}
+                        value={"채팅방 이름 입력 후 엔터"}
+                    />
                     <ChatList
-                        rooms={rooms}
+                        rooms={roomLists}
                         onClickSelectRoom={handelClickSelectRoom}
                     />
                 </ChatTemplate>
                 <ChatTemplate>
                     <ChatRoomModal
-                        title={currentShowRoom.roomName}
-                        onClose={onClose}
+                        title={currentSelectRoom.roomName}
+                        handleCloseRoom={handleCloseRoom}
                     >
-                        <ChatHistory roomData={currentShowRoom} />
-                        <ChatInput onCreateMessage={onCreateMessage} />
+                        <ChatHistory
+                            roomData={currentSelectRoom}
+                            chat={messageData}
+                        />
+                        <InputTxt
+                            onChangeTxt={handleSendMessage}
+                            value={"메시지 입력 후 엔터"}
+                        />
                     </ChatRoomModal>
                 </ChatTemplate>
                 <ChatTemplate>

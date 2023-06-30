@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-function ChatInput({ onCreateMessage }) {
-    const [messageTxt, setMessageTxt] = useState("");
+function InputTxt({ onChangeTxt }) {
+    const [value, setValue] = useState("");
 
     const handleInputChange = (e) => {
-        setMessageTxt(e.target.value);
+        setValue(e.target.value);
     };
 
     const handelCreateMessage = (e) => {
         e.preventDefault();
-        onCreateMessage(messageTxt);
-        setMessageTxt("");
+        onChangeTxt(value);
+        setValue("");
     };
 
     return (
@@ -21,7 +21,7 @@ function ChatInput({ onCreateMessage }) {
                     <input
                         autoFocus
                         onChange={handleInputChange}
-                        value={messageTxt}
+                        value={value}
                         placeholder="메시지입력"
                     ></input>
                     <button onClick={handelCreateMessage}>입력</button>
@@ -31,4 +31,4 @@ function ChatInput({ onCreateMessage }) {
     );
 }
 
-export default ChatInput;
+export default InputTxt;

@@ -1,0 +1,115 @@
+{
+    "chatRooms": [
+        {
+            "roomTitle": "방1",
+            "createdAt": "2023-06-16T01:02:00.531Z",
+            "id": 1
+        },
+        {
+            "roomTitle": "방2",
+            "createdAt": "2023-06-15T01:02:00.531Z",
+            "id": 2
+        },
+        {
+            "roomTitle": "방3",
+            "createdAt": "2023-06-14T01:02:00.531Z",
+            "id": 3
+        }
+    ],
+    "chatMessages": [
+        {
+            "id": 1,
+            "messages": [
+                {
+                    "user_id": "123",
+                    "username": "Kim",
+                    "timestamp": "2023-06-29T14:30:00Z",
+                    "message": "떡복이"
+                },
+                {
+                    "user_id": "456",
+                    "username": "Song",
+                    "timestamp": "2023-06-29T14:31:00Z",
+                    "message": "순대"
+                },
+                {
+                    "user_id": "123",
+                    "username": "Kim",
+                    "timestamp": "2023-06-29T14:32:00Z",
+                    "message": "어묵"
+                },
+                {
+                    "user_id": "456",
+                    "username": "Song",
+                    "timestamp": "2023-06-29T14:33:00Z",
+                    "message": "감자튀김"
+                },
+                {
+                    "user_id": "admin",
+                    "username": "Song",
+                    "timestamp": "2023-06-30T04:42:38.372Z",
+                    "message": "아딸"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "messages": [
+                {
+                    "user_id": "789",
+                    "username": "Park",
+                    "timestamp": "2023-06-29T15:00:00Z",
+                    "message": "여러분, 안녕하세요!"
+                },
+                {
+                    "user_id": "1011",
+                    "username": "Choi",
+                    "timestamp": "2023-06-29T15:01:00Z",
+                    "message": "안녕하세요, Park님!"
+                },
+                {
+                    "user_id": "admin",
+                    "username": "Song",
+                    "timestamp": "2023-06-30T02:27:51.428Z",
+                    "message": "뽀로로"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "messages": [
+                {
+                    "user_id": "123",
+                    "username": "Kim",
+                    "timestamp": "2023-06-29T14:30:00Z",
+                    "message": "떡복이"
+                },
+                {
+                    "user_id": "456",
+                    "username": "Song",
+                    "timestamp": "2023-06-29T14:31:00Z",
+                    "message": "순대"
+                },
+                {
+                    "user_id": "123",
+                    "username": "Kim",
+                    "timestamp": "2023-06-29T14:32:00Z",
+                    "message": "어묵"
+                },
+                {
+                    "user_id": "456",
+                    "username": "Song",
+                    "timestamp": "2023-06-29T14:33:00Z",
+                    "message": "감자튀김"
+                },
+                {
+                    "user_id": "admin",
+                    "username": "Song",
+                    "timestamp": "2023-06-30T02:27:59.819Z",
+                    "message": "둘리쨩"
+                }
+            ]
+        }
+    ],
+    "members": []
+}
