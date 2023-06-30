@@ -7,7 +7,7 @@ import ChatTemplate from "./components/share/ChatTemplate";
 import InputTxt from "./components/share/input/InputTxt";
 
 //채팅방
-import ChatList from "./components/rooms/ChatList";
+import ChatRoomList from "./components/rooms/ChatRoomList";
 
 //채팅 메시지
 import ChatHistory from "./components/chats/ChatHistory";
@@ -133,7 +133,7 @@ function App() {
                         onChangeTxt={handleCreateChatRoom}
                         value={"채팅방 이름 입력 후 엔터"}
                     />
-                    <ChatList
+                    <ChatRoomList
                         rooms={roomLists}
                         onClickSelectRoom={handelClickSelectRoom}
                     />

@@ -3,7 +3,7 @@ import { useState, useEffect, useCallback } from "react";
 import ChatRoomItem from "./ChatRoomItem";
 import axios from "axios";
 
-function ChatList({ rooms, onClickSelectRoom }) {
+function ChatRoomList({ rooms, onClickSelectRoom }) {
     if (!rooms) {
         return;
     }
@@ -23,4 +23,4 @@ function ChatList({ rooms, onClickSelectRoom }) {
     );
 }
 
-export default ChatList;
+export default ChatRoomList;
