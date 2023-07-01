@@ -12,7 +12,14 @@ import ChatRoomList from "./components/rooms/ChatRoomList";
 //채팅 메시지
 import ChatHistory from "./components/chats/ChatHistory";
 import ChatRoomLayout from "./components/chats/ChatLayout";
-import { addChatRoom, getChatRooms } from "./utils/api";
+import {
+    loginUser,
+    getChatRooms,
+    addChatRoom,
+    deleteChatRoom,
+    updateChatMessage,
+    getChatMessage,
+} from "./utils/api";
 
 //멤버
 
@@ -25,48 +32,26 @@ function App() {
         addChatRoom(roomTitle).then(getChatRooms).then(setRoomLists);
 
     const handleCloseRoom = () => {
-        //db가 없어서 부득이하게 api 두번 쏨
-        //1. 채팅방 지우기, 2. 채팅방 데이터 지우기
-        axios
-            .delete(`http://localhost:4001/chatRooms/${currentSelectRoom.id}`)
-            .then(() => {
-                axios.delete(
-                    `http://localhost:4001/chatMessages/${currentSelectRoom.id}`
-                );
-
-                //todo : 삭제 후 컴포넌트 리렌더링
-            })
-            .catch(console.error);
+        deleteChatRoom(currentSelectRoom.id);
     };
 
     const handleSendMessage = (newMessage) => {
-        const today = new Date();
-        const createdAt = today.toISOString();
         const messages = [
             ...messageData.messages,
             {
-                userId: "admin",
-                username: "Song",
-                timestamp: createdAt,
+                userId: loginUser.userId,
+                username: loginUser.username,
+                timestamp: new Date().toISOString(),
                 message: newMessage,
             },
         ];
 
-        //메시지가 중간에 이어지면 이게 가능, 하지만 신규로 만들어진 방은 이게 불가능하다 그냥 푸시해야함
-        //중간방이면 이게 가능
-
-        axios
-            .patch(
-                `http://localhost:4001/chatMessages/${currentSelectRoom.id}`,
-                { messages }
-            )
-            .catch(console.error)
-            .then(
-                setMessageData({
-                    id: currentSelectRoom.id,
-                    messages,
-                })
-            );
+        updateChatMessage(currentSelectRoom.id, messages).then(
+            setMessageData({
+                id: currentSelectRoom.id,
+                messages,
+            })
+        );
     };
 
     const handelClickSelectRoom = (id, roomTitle) => {
@@ -78,6 +63,7 @@ function App() {
         getChatRooms().then(setRoomLists);
     }, []);
 
+    //대화방 선택에 따라서 채팅방 다시 패칭
     useEffect(() => {
         if (roomLists.length > 0) {
             const last = roomLists[roomLists.length - 1];
@@ -89,10 +75,7 @@ function App() {
     //채팅방 대화정보 데이터 패칭
     useEffect(() => {
         if (currentSelectRoom?.id) {
-            axios
-                .get(
-                    `http://localhost:4001/chatMessages/${currentSelectRoom.id}`
-                )
+            getChatMessage(currentSelectRoom.id)
                 .then((res) => {
                     setMessageData(res.data);
                 })

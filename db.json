@@ -16,13 +16,13 @@
       "id": 3
     },
     {
-      "roomTitle": "방4",
-      "createdAt": "2023-07-01T07:22:03.580Z",
+      "roomTitle": "방444",
+      "createdAt": "2023-07-01T08:24:54.353Z",
       "id": 4
     },
     {
-      "roomTitle": "방5",
-      "createdAt": "2023-07-01T07:27:20.697Z",
+      "roomTitle": "호호",
+      "createdAt": "2023-07-01T08:33:51.317Z",
       "id": 5
     }
   ],
@@ -92,6 +92,18 @@
           "username": "Song",
           "timestamp": "2023-06-30T07:27:31.187Z",
           "message": "새로운방 새로운 마음"
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-01T08:18:01.674Z",
+          "message": "안녕ㅋㅋㅋ"
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-01T08:18:06.128Z",
+          "message": "반가원ㄴㄴ"
         }
       ],
       "id": 3
@@ -101,14 +113,14 @@
         {
           "userId": "admin",
           "username": "Song",
-          "timestamp": "2023-07-01T07:24:25.061Z",
-          "message": "안녕"
+          "timestamp": "2023-07-01T08:25:05.236Z",
+          "message": "샤샤샤"
         },
         {
           "userId": "admin",
           "username": "Song",
-          "timestamp": "2023-07-01T07:27:40.243Z",
-          "message": "오예"
+          "timestamp": "2023-07-01T08:25:09.163Z",
+          "message": "칭구칭구"
         }
       ],
       "id": 4
@@ -118,14 +130,26 @@
         {
           "userId": "admin",
           "username": "Song",
-          "timestamp": "2023-07-01T07:27:49.347Z",
-          "message": "우하하하"
+          "timestamp": "2023-07-01T08:33:54.474Z",
+          "message": "뉴뉴뉴"
         },
         {
           "userId": "admin",
           "username": "Song",
-          "timestamp": "2023-07-01T07:27:53.384Z",
-          "message": "우하하하"
+          "timestamp": "2023-07-01T08:33:55.858Z",
+          "message": "호호호"
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-01T08:33:57.864Z",
+          "message": "방가웡"
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-01T08:33:58.586Z",
+          "message": "ㅋㅋ"
         }
       ],
       "id": 5
@@ -183,7 +207,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "members": [
         {
           "userId": "admin",
@@ -202,6 +226,24 @@
           "username": "포로리"
         }
       ]
+    },
+    {
+      "members": [
+        {
+          "userId": "admin",
+          "username": "Song"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "members": [
+        {
+          "userId": "admin",
+          "username": "Song"
+        }
+      ],
+      "id": 5
     }
   ]
 }
