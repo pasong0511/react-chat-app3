@@ -1,19 +1,19 @@
-import React, { useEffect } from "react";
-import { useState, useCallback } from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import ChatRoomItem from "./ChatRoomItem";
 
 function ChatRoomList({ roomLists, searchRoomTitle, onClickSelectRoom }) {
-    const [newRooms, setNewRooms] = useState(roomLists);
+    const [newRoomLists, setNewRoomLists] = useState(roomLists);
 
     useEffect(() => {
-        setNewRooms(roomLists);
+        setNewRoomLists(roomLists);
     }, [roomLists]);
 
     if (!roomLists) {
         return;
     }
 
-    const searchedRooms = newRooms.filter(
+    const searchRoomLists = newRoomLists.filter(
         (item) =>
             !searchRoomTitle ||
             item.roomTitle.toLowerCase().includes(searchRoomTitle)
@@ -21,7 +21,7 @@ function ChatRoomList({ roomLists, searchRoomTitle, onClickSelectRoom }) {
 
     return (
         <ul>
-            {searchedRooms.map((room) => (
+            {searchRoomLists.map((room) => (
                 <li
                     className="chat-room-item"
                     key={room.id}

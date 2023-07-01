@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 
 import { fetchChatMember } from "../../utils/api";
 

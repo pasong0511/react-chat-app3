@@ -1,6 +1,4 @@
-import React from "react";
-import { useState, useEffect, useCallback } from "react";
-import axios from "axios";
+import { loginUser } from "../../utils/api";
 
 function MessageList({ messageData }) {
     return (
@@ -9,7 +7,9 @@ function MessageList({ messageData }) {
                 <div
                     key={message.messageId}
                     className={`message ${
-                        message.username === "Song" ? "message-own" : ""
+                        message.username === loginUser.username
+                            ? "message-own"
+                            : ""
                     }`}
                 >
                     <h5>

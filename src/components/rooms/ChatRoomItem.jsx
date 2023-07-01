@@ -1,11 +1,5 @@
-import React from "react";
-
 const ChatRoomItem = ({ roomTitle }) => {
-    return (
-        <>
-            <div>{roomTitle}</div>
-        </>
-    );
+    return <div>{roomTitle}</div>;
 };
 
-export default React.memo(ChatRoomItem);
+export default ChatRoomItem;
