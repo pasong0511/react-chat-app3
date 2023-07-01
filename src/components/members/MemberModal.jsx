@@ -1,6 +1,6 @@
 const MemberModal = ({ title, children }) => {
     return (
-        <div className="modal">
+        <div style={{ width: "200px", maxWidth: "200px" }} className="modal">
             <header>
                 <div className="modal_header_group">
                     <h1 className="content-title">{title}</h1>

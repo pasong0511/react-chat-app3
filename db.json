@@ -16,14 +16,44 @@
       "id": 3
     },
     {
-      "roomTitle": "방444",
-      "createdAt": "2023-07-01T08:24:54.353Z",
+      "roomTitle": "1",
+      "createdAt": "2023-07-01T11:32:45.433Z",
       "id": 4
     },
     {
-      "roomTitle": "호호",
-      "createdAt": "2023-07-01T08:33:51.317Z",
+      "roomTitle": "ㅂ",
+      "createdAt": "2023-07-01T12:16:55.543Z",
       "id": 5
+    },
+    {
+      "roomTitle": "바",
+      "createdAt": "2023-07-01T12:16:55.689Z",
+      "id": 6
+    },
+    {
+      "roomTitle": "방",
+      "createdAt": "2023-07-01T12:16:55.769Z",
+      "id": 7
+    },
+    {
+      "roomTitle": "방1",
+      "createdAt": "2023-07-01T12:16:56.065Z",
+      "id": 8
+    },
+    {
+      "roomTitle": "방",
+      "createdAt": "2023-07-01T12:16:56.536Z",
+      "id": 9
+    },
+    {
+      "roomTitle": "감자",
+      "createdAt": "2023-07-01T12:18:25.312Z",
+      "id": 10
+    },
+    {
+      "roomTitle": "새로운방 생성함 ㅋㅋ",
+      "createdAt": "2023-07-01T12:24:52.409Z",
+      "id": 11
     }
   ],
   "chatMessages": [
@@ -92,67 +122,66 @@
           "username": "Song",
           "timestamp": "2023-06-30T07:27:31.187Z",
           "message": "새로운방 새로운 마음"
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-01T08:18:01.674Z",
-          "message": "안녕ㅋㅋㅋ"
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-01T08:18:06.128Z",
-          "message": "반가원ㄴㄴ"
         }
       ],
       "id": 3
     },
     {
-      "messages": [
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-01T08:25:05.236Z",
-          "message": "샤샤샤"
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-01T08:25:09.163Z",
-          "message": "칭구칭구"
-        }
-      ],
+      "messages": [],
       "id": 4
+    },
+    {
+      "messages": [],
+      "id": 5
+    },
+    {
+      "messages": [],
+      "id": 6
+    },
+    {
+      "messages": [],
+      "id": 7
+    },
+    {
+      "messages": [],
+      "id": 8
+    },
+    {
+      "messages": [],
+      "id": 9
+    },
+    {
+      "messages": [],
+      "id": 10
     },
     {
       "messages": [
         {
           "userId": "admin",
           "username": "Song",
-          "timestamp": "2023-07-01T08:33:54.474Z",
-          "message": "뉴뉴뉴"
+          "timestamp": "2023-07-01T12:24:59.171Z",
+          "message": "우다다다"
         },
         {
           "userId": "admin",
           "username": "Song",
-          "timestamp": "2023-07-01T08:33:55.858Z",
-          "message": "호호호"
+          "timestamp": "2023-07-01T12:25:02.293Z",
+          "message": "뽀뽀"
         },
         {
           "userId": "admin",
           "username": "Song",
-          "timestamp": "2023-07-01T08:33:57.864Z",
-          "message": "방가웡"
+          "timestamp": "2023-07-01T12:25:05.065Z",
+          "message": "푱뵹"
         },
         {
           "userId": "admin",
           "username": "Song",
-          "timestamp": "2023-07-01T08:33:58.586Z",
-          "message": "ㅋㅋ"
+          "timestamp": "2023-07-01T12:25:07.349Z",
+          "message": "ㅋㅋㅋ"
         }
       ],
-      "id": 5
+      "id": 11
     }
   ],
   "chatMembers": [
@@ -244,6 +273,60 @@
         }
       ],
       "id": 5
+    },
+    {
+      "members": [
+        {
+          "userId": "admin",
+          "username": "Song"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "members": [
+        {
+          "userId": "admin",
+          "username": "Song"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "members": [
+        {
+          "userId": "admin",
+          "username": "Song"
+        }
+      ],
+      "id": 8
+    },
+    {
+      "members": [
+        {
+          "userId": "admin",
+          "username": "Song"
+        }
+      ],
+      "id": 9
+    },
+    {
+      "members": [
+        {
+          "userId": "admin",
+          "username": "Song"
+        }
+      ],
+      "id": 10
+    },
+    {
+      "members": [
+        {
+          "userId": "admin",
+          "username": "Song"
+        }
+      ],
+      "id": 11
     }
   ]
 }

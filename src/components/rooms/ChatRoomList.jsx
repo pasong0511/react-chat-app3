@@ -1,20 +1,35 @@
-import React from "react";
-import { useState, useEffect, useCallback } from "react";
+import React, { useEffect } from "react";
+import { useState, useCallback } from "react";
 import ChatRoomItem from "./ChatRoomItem";
-import axios from "axios";
 
-function ChatRoomList({ rooms, onClickSelectRoom }) {
+function ChatRoomList({ rooms, searchRoomTitle, onClickSelectRoom }) {
+    const [newRooms, setNewRooms] = useState(rooms);
+
+    useEffect(() => {
+        setNewRooms(rooms);
+    }, [rooms]);
+
     if (!rooms) {
         return;
     }
 
+    console.log("🥟🥟🥟방", rooms);
+
+    const searchedRooms = newRooms.filter(
+        (item) =>
+            !searchRoomTitle ||
+            item.roomTitle.toLowerCase().includes(searchRoomTitle)
+    );
+
+    console.log("검색결과🧀🧀🧀", searchedRooms);
+
     return (
         <ul>
-            {rooms.map((room, index) => (
+            {searchedRooms.map((room) => (
                 <li
                     className="chat-room-item"
-                    key={index}
-                    onClick={() => onClickSelectRoom(room.id, room.roomTitle)}
+                    key={room.id}
+                    onClick={() => onClickSelectRoom(room)}
                 >
                     <ChatRoomItem roomTitle={room.roomTitle} />
                 </li>
