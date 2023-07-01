@@ -12,44 +12,17 @@ import ChatRoomList from "./components/rooms/ChatRoomList";
 //채팅 메시지
 import ChatHistory from "./components/chats/ChatHistory";
 import ChatRoomLayout from "./components/chats/ChatLayout";
+import { addChatRoom, getChatRooms } from "./utils/api";
 
 //멤버
-import MemberModal from "./components/members/MemberModal";
-import MemberList from "./components/members/MemberList";
 
 function App() {
     const [roomLists, setRoomLists] = useState([]); //전체 채팅방 목록
     const [messageData, setMessageData] = useState({}); //채팅방에 1개에 따른 메시지 데이터
     const [currentSelectRoom, setCurrentSelectRoom] = useState({}); //헌재 선택한 룸
 
-    const fetchChatRooms = () => {
-        axios.get(`http://localhost:4001/chatRooms`).then((res) => {
-            setRoomLists(res.data);
-        });
-    };
-
-    const handleCreateChatRoom = (roomTitle) => {
-        const today = new Date();
-        const createdAt = today.toISOString();
-
-        let newRoom = {
-            roomTitle,
-            createdAt: createdAt,
-        };
-        axios
-            .post("http://localhost:4001/chatRooms", {
-                roomTitle,
-                createdAt: createdAt,
-            })
-            .then(() => {
-                console.log("🚗🚗🚗🚗🚗rooms", roomLists, newRoom);
-                //newRoom에 방 id 추가해야함
-                setRoomLists([...roomLists, newRoom]);
-            })
-            .catch((e) => {
-                console.error(e);
-            });
-    };
+    const handleCreateChatRoom = (roomTitle) =>
+        addChatRoom(roomTitle).then(getChatRooms).then(setRoomLists);
 
     const handleCloseRoom = () => {
         //db가 없어서 부득이하게 api 두번 쏨
@@ -63,68 +36,37 @@ function App() {
 
                 //todo : 삭제 후 컴포넌트 리렌더링
             })
-            .catch((e) => {
-                console.error(e);
-            });
+            .catch(console.error);
     };
 
     const handleSendMessage = (newMessage) => {
         const today = new Date();
         const createdAt = today.toISOString();
-        let messages = [];
-
-        const saveMessage = {
-            userId: "admin",
-            username: "Song",
-            timestamp: createdAt,
-            message: newMessage,
-        };
+        const messages = [
+            ...messageData.messages,
+            {
+                userId: "admin",
+                username: "Song",
+                timestamp: createdAt,
+                message: newMessage,
+            },
+        ];
 
         //메시지가 중간에 이어지면 이게 가능, 하지만 신규로 만들어진 방은 이게 불가능하다 그냥 푸시해야함
         //중간방이면 이게 가능
 
-        console.log(messageData);
-
-        if (!messageData["messages"]) {
-            //신규 대화
-            messages = [saveMessage];
-            console.log("🎄 신규 메시지값", messages);
-
-            axios
-                .post(`http://localhost:4001/chatMessages`, {
+        axios
+            .patch(
+                `http://localhost:4001/chatMessages/${currentSelectRoom.id}`,
+                { messages }
+            )
+            .catch(console.error)
+            .then(
+                setMessageData({
+                    id: currentSelectRoom.id,
                     messages,
                 })
-                .then(() => {
-                    setMessageData({
-                        id: currentSelectRoom.id,
-                        messages,
-                    });
-                })
-                .catch((e) => {
-                    console.error(e);
-                });
-        } else {
-            //이어서 대화하기
-            messages = [...messageData.messages, saveMessage];
-            console.log("🎄 이어쓰기 메시지값", messages);
-
-            axios
-                .patch(
-                    `http://localhost:4001/chatMessages/${currentSelectRoom.id}`,
-                    {
-                        messages,
-                    }
-                )
-                .then(() => {
-                    setMessageData({
-                        id: messageData.id,
-                        messages,
-                    });
-                })
-                .catch((e) => {
-                    console.error(e);
-                });
-        }
+            );
     };
 
     const handelClickSelectRoom = (id, roomTitle) => {
@@ -133,21 +75,29 @@ function App() {
 
     //채팅방 목록 데이터 패칭
     useEffect(() => {
-        fetchChatRooms();
+        getChatRooms().then(setRoomLists);
     }, []);
+
+    useEffect(() => {
+        if (roomLists.length > 0) {
+            const last = roomLists[roomLists.length - 1];
+            console.log(roomLists);
+            handelClickSelectRoom(last.id, last.roomTitle);
+        }
+    }, [roomLists]);
 
     //채팅방 대화정보 데이터 패칭
     useEffect(() => {
-        const fetchMessageHistory = (id) => {
+        if (currentSelectRoom?.id) {
             axios
-                .get(`http://localhost:4001/chatMessages/${id}`)
+                .get(
+                    `http://localhost:4001/chatMessages/${currentSelectRoom.id}`
+                )
                 .then((res) => {
                     setMessageData(res.data);
                 })
-                .catch((e) => {});
-        };
-
-        fetchMessageHistory(currentSelectRoom.id);
+                .catch(console.error);
+        }
     }, [currentSelectRoom]);
 
     console.log("💡 room 상태", roomLists);

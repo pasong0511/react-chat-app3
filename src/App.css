@@ -7,6 +7,12 @@
     height: 90vh;
     margin: 10px;
     background-color: tomato;
+    flex: 1;
+}
+
+.chat_content:last-child {
+    flex: 4;
+    display: flex;
 }
 
 .chat_list_logo_group {
@@ -27,6 +33,7 @@
     width: 100%;
     height: 100%;
     background-color: mediumseagreen;
+    flex: 2;
 }
 
 .modal_wrapper {
