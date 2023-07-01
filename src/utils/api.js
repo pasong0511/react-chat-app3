@@ -13,10 +13,13 @@ const addChatMessageGroup = () =>
 const addChatMemberGroup = () =>
     axios.post("http://localhost:4001/chatMembers", { members: [loginUser] });
 
-const deleteChatMessageGroup = (id) =>
+export const fetchChatMember = (id) =>
+    axios.get(`http://localhost:4001/chatMembers/${id}`);
+
+const deleteChatMessage = (id) =>
     axios.delete(`http://localhost:4001/chatMessages/${id}`);
 
-const deleteChatMemberGroup = (id) =>
+const deleteChatMember = (id) =>
     axios.delete(`http://localhost:4001/chatMembers/${id}`);
 
 export const getChatRooms = () =>
@@ -40,8 +43,8 @@ export const addChatRoom = (roomTitle) =>
 export const deleteChatRoom = (id) =>
     axios
         .delete(`http://localhost:4001/chatRooms/${id}`)
-        .then(() => deleteChatMessageGroup(id))
-        .then(() => deleteChatMemberGroup(id))
+        .then(() => deleteChatMessage(id))
+        .then(() => deleteChatMember(id))
         .catch(console.error);
 
 export const updateChatMessage = (id, messages) =>

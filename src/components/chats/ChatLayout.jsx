@@ -16,7 +16,7 @@ const ChatRoomLayout = ({
         setMemberViewOpen(!memberViewOpen);
     };
 
-    console.log("보여주기", currentSelectRoom);
+    console.log("채팅방에서 선택한 룸 보여주기", currentSelectRoom);
 
     return (
         <>
