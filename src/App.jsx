@@ -37,14 +37,22 @@ function App() {
             .then(getChatRooms)
             .then(setRoomLists);
 
-    const handleSendMessage = (newMessage) => {
+    const handleSendMessage = (newText) => {
+        const newMessage = {
+            userId: loginUser.userId,
+            username: loginUser.username,
+            timestamp: new Date().toISOString(),
+            message: newText,
+        };
         const messages = [
             ...messageData.messages,
             {
-                userId: loginUser.userId,
-                username: loginUser.username,
-                timestamp: new Date().toISOString(),
-                message: newMessage,
+                ...newMessage,
+                messageId: btoa(
+                    encodeURIComponent(
+                        `${Math.random()}` + JSON.stringify(newMessage)
+                    )
+                ).slice(0, 256),
             },
         ];
 
@@ -104,10 +112,6 @@ function App() {
         }
     }, [currentSelectRoom]);
 
-    console.log("💡 room 상태", roomLists);
-    console.log("💡 messageData 상태", messageData);
-    console.log("💡 currentSelectRoom 상태", currentSelectRoom);
-
     return (
         <div className="App">
             <div className="chat_main">
@@ -124,7 +128,7 @@ function App() {
                         placeholderValue={"검색할 채팅방 이름 입력 후 엔터"}
                     />
                     <ChatRoomList
-                        rooms={roomLists}
+                        roomLists={roomLists}
                         searchRoomTitle={searchRoomTitle}
                         onClickSelectRoom={setCurrentSelectRoom}
                     />
@@ -134,10 +138,7 @@ function App() {
                         currentSelectRoom={currentSelectRoom}
                         handleCloseRoom={handleCloseRoom}
                     >
-                        <ChatHistory
-                            roomData={currentSelectRoom}
-                            chat={messageData}
-                        />
+                        <ChatHistory messageData={messageData} />
                         <InputTxt
                             onChangeTxt={handleSendMessage}
                             placeholderValue={"메시지 입력 후 엔터"}

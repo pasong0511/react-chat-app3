@@ -2,12 +2,12 @@ import React from "react";
 import { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 
-function ChatHistory({ roomData, chat }) {
+function ChatHistory({ messageData }) {
     return (
         <div className="chatroom">
-            {chat.messages?.map((message, index) => (
+            {messageData.messages?.map((message) => (
                 <div
-                    key={index}
+                    key={message.messageId}
                     className={`message ${
                         message.username === "Song" ? "message-own" : ""
                     }`}

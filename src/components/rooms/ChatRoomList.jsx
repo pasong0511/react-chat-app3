@@ -2,26 +2,22 @@ import React, { useEffect } from "react";
 import { useState, useCallback } from "react";
 import ChatRoomItem from "./ChatRoomItem";
 
-function ChatRoomList({ rooms, searchRoomTitle, onClickSelectRoom }) {
-    const [newRooms, setNewRooms] = useState(rooms);
+function ChatRoomList({ roomLists, searchRoomTitle, onClickSelectRoom }) {
+    const [newRooms, setNewRooms] = useState(roomLists);
 
     useEffect(() => {
-        setNewRooms(rooms);
-    }, [rooms]);
+        setNewRooms(roomLists);
+    }, [roomLists]);
 
-    if (!rooms) {
+    if (!roomLists) {
         return;
     }
-
-    console.log("🥟🥟🥟방", rooms);
 
     const searchedRooms = newRooms.filter(
         (item) =>
             !searchRoomTitle ||
             item.roomTitle.toLowerCase().includes(searchRoomTitle)
     );
-
-    console.log("검색결과🧀🧀🧀", searchedRooms);
 
     return (
         <ul>

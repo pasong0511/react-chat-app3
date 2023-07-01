@@ -2,86 +2,137 @@
     "chatRooms": [
         {
             "roomTitle": "방1",
-            "createdAt": "2023-06-16T01:02:00.531Z",
+            "createdAt": "2023-07-01T13:40:26.850Z",
             "id": 1
         },
         {
             "roomTitle": "방2",
-            "createdAt": "2023-06-15T01:02:00.531Z",
+            "createdAt": "2023-07-01T13:40:29.303Z",
             "id": 2
         },
         {
             "roomTitle": "방3",
-            "createdAt": "2023-06-30T05:44:03.209Z",
+            "createdAt": "2023-07-01T13:40:34.170Z",
             "id": 3
         }
     ],
     "chatMessages": [
         {
-            "id": 1,
             "messages": [
                 {
-                    "userId": "123",
-                    "username": "Kim",
-                    "timestamp": "2023-06-29T14:30:00Z",
-                    "message": "떡복이"
-                },
-                {
-                    "userId": "456",
+                    "userId": "admin",
                     "username": "Song",
-                    "timestamp": "2023-06-29T14:31:00Z",
-                    "message": "순대"
+                    "timestamp": "2023-07-01T13:40:59.993Z",
+                    "message": "안녕",
+                    "messageId": "MC4yNjc3NjAwNTUxMTQ0MjA2JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAxVDEzJTNBNDAlM0E1OS45OTNaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFQyU5NSU4OCVFQiU4NSU5NSUyMiU3RA=="
                 },
                 {
-                    "userId": "123",
-                    "username": "Kim",
-                    "timestamp": "2023-06-29T14:32:00Z",
-                    "message": "어묵"
-                },
-                {
-                    "userId": "456",
-                    "username": "Song",
-                    "timestamp": "2023-06-29T14:33:00Z",
-                    "message": "감자튀김"
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "messages": [
-                {
-                    "userId": "789",
-                    "username": "Park",
-                    "timestamp": "2023-06-29T15:00:00Z",
-                    "message": "여러분, 안녕하세요!"
-                },
-                {
-                    "userId": "1011",
-                    "username": "Choi",
-                    "timestamp": "2023-06-29T15:01:00Z",
-                    "message": "안녕하세요, Park님!"
+                    "userId": "어피치",
+                    "username": "어피치",
+                    "timestamp": "2023-07-01T13:41:03.749Z",
+                    "message": "반가워요",
+                    "messageId": "MC4yNTg2MzQxOTk5MTYwODg2JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAxVDEzJTNBNDElM0EwMy43NDlaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFQiVCMCU5OCVFQSVCMCU4MCVFQyU5QiU4QyVFQyU5QSU5NCUy"
                 },
                 {
                     "userId": "admin",
                     "username": "Song",
-                    "timestamp": "2023-06-30T02:27:51.428Z",
-                    "message": "뽀로로"
+                    "timestamp": "2023-07-01T13:41:07.283Z",
+                    "message": "하이루",
+                    "messageId": "MC44NzIzMjIxODQwMDIyNTMzJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAxVDEzJTNBNDElM0EwNy4yODNaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFRCU5NSU5OCVFQyU5RCVCNCVFQiVBMyVBOCUyMiU3RA=="
                 },
                 {
                     "userId": "admin",
                     "username": "Song",
-                    "timestamp": "2023-06-30T05:59:44.970Z",
-                    "message": "루피"
+                    "timestamp": "2023-07-01T13:44:06.794Z",
+                    "message": "라이언은 바보다~~~~",
+                    "messageId": "MC4xODIzNzU3OTQwOTYwNTAyJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAxVDEzJTNBNDQlM0EwNi43OTRaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFQiU5RCVCQyVFQyU5RCVCNCVFQyU5NiVCOCUyMiU3RA=="
+                },
+                {
+                    "userId": "admin",
+                    "username": "Song",
+                    "timestamp": "2023-07-01T13:44:31.727Z",
+                    "message": "어피치는 귀여워",
+                    "messageId": "MC42OTQyNjA3MDUzMzQ0MjAzJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAxVDEzJTNBNDQlM0EzMS43MjdaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFQyVCOSVCNCVFQyVCOSVCNCVFQyU5OCVBNCVFRCU4NiVBMSUy"
                 }
-            ]
+            ],
+            "id": 1
         },
         {
             "messages": [
                 {
+                    "userId": "사장님",
+                    "username": "사장님",
+                    "timestamp": "2023-07-01T13:41:14.614Z",
+                    "message": "감자튀김",
+                    "messageId": "MC4zMzU1MDkxNTUxOTExNDMxJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAxVDEzJTNBNDElM0ExNC42MTRaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFQSVCMCU5MCVFQyU5RSU5MCVFRCU4QSU4MCVFQSVCOSU4MCUy"
+                },
+                {
                     "userId": "admin",
                     "username": "Song",
-                    "timestamp": "2023-06-30T07:27:31.187Z",
-                    "message": "새로운방 새로운 마음"
+                    "timestamp": "2023-07-01T13:41:17.468Z",
+                    "message": "고구마튀김",
+                    "messageId": "MC4xNzY2MjQ0OTUzMTEyODgzMiU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMVQxMyUzQTQxJTNBMTcuNDY4WiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjIlRUElQjMlQTAlRUElQjUlQUMlRUIlQTclODglRUQlOEElODAl"
+                },
+                {
+                    "userId": "알바1",
+                    "username": "알바1",
+                    "timestamp": "2023-07-01T13:41:21.419Z",
+                    "message": "옥수수튀김",
+                    "messageId": "MC4zNTkxMDgyMjYwMTM3OTUlN0IlMjJ1c2VySWQlMjIlM0ElMjJhZG1pbiUyMiUyQyUyMnVzZXJuYW1lJTIyJTNBJTIyU29uZyUyMiUyQyUyMnRpbWVzdGFtcCUyMiUzQSUyMjIwMjMtMDctMDFUMTMlM0E0MSUzQTIxLjQxOVolMjIlMkMlMjJtZXNzYWdlJTIyJTNBJTIyJUVDJTk4JUE1JUVDJTg4JTk4JUVDJTg4JTk4JUVEJThBJTgwJUVB"
+                },
+                {
+                    "userId": "알바2",
+                    "username": "알바2",
+                    "timestamp": "2023-07-01T13:41:27.250Z",
+                    "message": "야채튀김",
+                    "messageId": "MC4wMzE0NzU4NDE0NTkxNTg5NCU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMVQxMyUzQTQxJTNBMjcuMjUwWiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjIlRUMlOTUlQkMlRUMlQjElODQlRUQlOEElODAlRUElQjklODAl"
+                },
+                {
+                    "userId": "사장님",
+                    "username": "사장님",
+                    "timestamp": "2023-07-01T13:41:30.485Z",
+                    "message": "떡튀김",
+                    "messageId": "MC4yNDI5ODE3MjM0MzA0NzE4NiU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMVQxMyUzQTQxJTNBMzAuNDg1WiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjIlRUIlOTYlQTElRUQlOEElODAlRUElQjklODAlMjIlN0Q="
+                }
+            ],
+            "id": 2
+        },
+        {
+            "messages": [
+                {
+                    "userId": "아이유",
+                    "username": "아이유",
+                    "timestamp": "2023-07-01T13:41:37.257Z",
+                    "message": "떡볶이 먹고싶다",
+                    "messageId": "MC40NTExMTUyODI4NDY0NTY4NiU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMVQxMyUzQTQxJTNBMzcuMjU3WiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjIlRUIlOTYlQTElRUIlQjMlQjYlRUMlOUQlQjQlMjIlN0Q="
+                },
+                {
+                    "userId": "아이유",
+                    "username": "아이유",
+                    "timestamp": "2023-07-01T13:41:38.182Z",
+                    "message": "아딸 먹을까요",
+                    "messageId": "MC43NDMyMTY1MDg1NTM5MjEzJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAxVDEzJTNBNDElM0EzOC4xODJaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFQyU5NSU4NCVFQiU5NCVCOCUyMiU3RA=="
+                },
+                {
+                    "userId": "이종석",
+                    "username": "이종석",
+                    "timestamp": "2023-07-01T13:41:39.784Z",
+                    "message": "나는 피자도 좋아요",
+                    "messageId": "MC4wNjQ3MjQ0MjkzNjIzMTcyNiU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMVQxMyUzQTQxJTNBMzkuNzg0WiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjIlRUQlOTQlQkMlRUMlOUUlOTAlMjIlN0Q="
+                },
+                {
+                    "userId": "admin",
+                    "username": "Song",
+                    "timestamp": "2023-07-01T13:41:43.288Z",
+                    "message": "어묵 많이 들어간 떡볶이 좋아",
+                    "messageId": "MC45ODIwMTM3NDIzMDgwMjQlN0IlMjJ1c2VySWQlMjIlM0ElMjJhZG1pbiUyMiUyQyUyMnVzZXJuYW1lJTIyJTNBJTIyU29uZyUyMiUyQyUyMnRpbWVzdGFtcCUyMiUzQSUyMjIwMjMtMDctMDFUMTMlM0E0MSUzQTQzLjI4OFolMjIlMkMlMjJtZXNzYWdlJTIyJTNBJTIyJUVDJTk2JUI0JUVCJUFDJUI1JTIyJTdE"
+                },
+                {
+                    "userId": "강호동",
+                    "username": "강호동",
+                    "timestamp": "2023-07-01T13:41:49.011Z",
+                    "message": "배민 ㄱㄱㄱㄱ",
+                    "messageId": "MC45MDI0NDc5NDQ5NDc0NzM4JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAxVDEzJTNBNDElM0E0OS4wMTFaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFRCU5NSVBQiVFQiU4RiU4NCVFQSVCNyVCOCUyMiU3RA=="
                 }
             ],
             "id": 3
@@ -89,36 +140,6 @@
     ],
     "chatMembers": [
         {
-            "id": 1,
-            "members": [
-                {
-                    "userId": "admin",
-                    "username": "Song"
-                },
-                {
-                    "userId": "루피",
-                    "username": "루피"
-                },
-                {
-                    "userId": "나미",
-                    "username": "나미"
-                },
-                {
-                    "userId": "상디",
-                    "username": "상디"
-                },
-                {
-                    "userId": "브록",
-                    "username": "브록"
-                },
-                {
-                    "userId": "로빈",
-                    "username": "로빈"
-                }
-            ]
-        },
-        {
-            "id": 2,
             "members": [
                 {
                     "userId": "admin",
@@ -133,31 +154,73 @@
                     "username": "라이언"
                 },
                 {
-                    "userId": "죠르디",
-                    "username": "상디"
+                    "userId": "무지",
+                    "username": "무지"
+                },
+                {
+                    "userId": "콘",
+                    "username": "콘"
+                },
+                {
+                    "userId": "춘식이",
+                    "username": "춘식이"
                 }
-            ]
+            ],
+            "id": 1
         },
         {
-            "id": 3,
             "members": [
                 {
                     "userId": "admin",
                     "username": "Song"
                 },
                 {
-                    "userId": "보노보노",
-                    "username": "보노보노"
+                    "userId": "사장님",
+                    "username": "사장님"
                 },
                 {
-                    "userId": "너부리",
-                    "username": "너부리"
+                    "userId": "알바생1",
+                    "username": "알바생1"
                 },
                 {
-                    "userId": "포로리",
-                    "username": "포로리"
+                    "userId": "알바생2",
+                    "username": "알바생2"
+                },
+                {
+                    "userId": "알바생3",
+                    "username": "알바생3"
+                },
+                {
+                    "userId": "알바생4",
+                    "username": "알바생4"
                 }
-            ]
+            ],
+            "id": 2
+        },
+        {
+            "members": [
+                {
+                    "userId": "admin",
+                    "username": "Song"
+                },
+                {
+                    "userId": "아이유",
+                    "username": "아이유"
+                },
+                {
+                    "userId": "강호동",
+                    "username": "강호동"
+                },
+                {
+                    "userId": "유재석",
+                    "username": "유재석"
+                },
+                {
+                    "userId": "이종석",
+                    "username": "이종석"
+                }
+            ],
+            "id": 3
         }
     ]
 }
