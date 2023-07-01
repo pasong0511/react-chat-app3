@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import MemberList from "../members/MemberList";
 import MemberModal from "../members/MemberModal";
 
-const ChatRoomLayout = ({ currentSelectRoom, handleCloseRoom, children }) => {
+const MessageLayout = ({ currentSelectRoom, handleCloseRoom, children }) => {
     const [memberViewOpen, setMemberViewOpen] = useState(false);
 
     const memberViewClose = () => {
@@ -43,4 +43,4 @@ const ChatRoomLayout = ({ currentSelectRoom, handleCloseRoom, children }) => {
     );
 };
 
-export default ChatRoomLayout;
+export default MessageLayout;

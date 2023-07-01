@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 
-function ChatHistory({ messageData }) {
+function MessageList({ messageData }) {
     return (
         <div className="chatroom">
             {messageData.messages?.map((message) => (
@@ -23,4 +23,4 @@ function ChatHistory({ messageData }) {
     );
 }
 
-export default ChatHistory;
+export default MessageList;

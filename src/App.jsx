@@ -9,8 +9,8 @@ import InputTxt from "./components/share/input/InputTxt";
 import ChatRoomList from "./components/rooms/ChatRoomList";
 
 //채팅 메시지
-import ChatHistory from "./components/chats/ChatHistory";
-import ChatRoomLayout from "./components/chats/ChatLayout";
+import MessageList from "./components/messages/MessageList";
+import MessageLayout from "./components/messages/MessageLayout";
 import {
     loginUser,
     getChatRooms,
@@ -134,16 +134,16 @@ function App() {
                     />
                 </ChatTemplate>
                 <ChatTemplate>
-                    <ChatRoomLayout
+                    <MessageLayout
                         currentSelectRoom={currentSelectRoom}
                         handleCloseRoom={handleCloseRoom}
                     >
-                        <ChatHistory messageData={messageData} />
+                        <MessageList messageData={messageData} />
                         <InputTxt
                             onChangeTxt={handleSendMessage}
                             placeholderValue={"메시지 입력 후 엔터"}
                         />
-                    </ChatRoomLayout>
+                    </MessageLayout>
                 </ChatTemplate>
             </div>
         </div>
