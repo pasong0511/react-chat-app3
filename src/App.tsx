@@ -36,7 +36,10 @@ function App() {
             alert("방 이름을 입력해주세요~");
             return null;
         }
-        addChatRoom(roomTitle).then(getChatRooms).then(setRoomLists);
+        addChatRoom(roomTitle)
+            .then(getChatRooms)
+            .then(setRoomLists)
+            .then(handleOpenAddRoom); //새로운방생성 버튼 닫기
     };
 
     const handleCloseRoom = () => {
