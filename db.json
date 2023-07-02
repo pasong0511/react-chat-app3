@@ -34,6 +34,11 @@
       "roomTitle": "새로운 방",
       "createdAt": "2023-07-02T08:30:18.415Z",
       "id": 7
+    },
+    {
+      "roomTitle": "뉴비의방",
+      "createdAt": "2023-07-02T08:44:52.206Z",
+      "id": 8
     }
   ],
   "chatMessages": [
@@ -229,8 +234,49 @@
       "id": 6
     },
     {
-      "messages": [],
+      "messages": [
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T08:39:10.146Z",
+          "message": "ㅋㅋㅋㅋㅋ",
+          "messageId": "MC4zNDk2NTE2NjU2MzQ0MDMzJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA4JTNBMzklM0ExMC4xNDZaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NSU4QiVFMyU4NSU4QiVFMyU4NSU4QiVFMyU4NSU4QiVF"
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T08:39:20.714Z",
+          "message": "ㅎㅎㅎㅎㅎ",
+          "messageId": "MC41NDAyNzA3ODI1MjY1OTA5JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA4JTNBMzklM0EyMC43MTRaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NSU4RSVFMyU4NSU4RSVFMyU4NSU4RSVFMyU4NSU4RSVF"
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T08:39:26.150Z",
+          "message": "ㅇㅇㄹ",
+          "messageId": "MC45NTQ2MzM1MTM4MzU0MTQ3JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA4JTNBMzklM0EyNi4xNTBaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NSU4NyVFMyU4NSU4NyVFMyU4NCVCOSUyMiU3RA=="
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T08:40:02.721Z",
+          "message": "ㅇㅁㄴㅇㅁㄴ",
+          "messageId": "MC42MTE5MzE4NzcxNTc0Mzk2JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA4JTNBNDAlM0EwMi43MjFaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NSU4NyVFMyU4NSU4MSVFMyU4NCVCNCVFMyU4NSU4NyVF"
+        }
+      ],
       "id": 7
+    },
+    {
+      "messages": [
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T08:45:01.155Z",
+          "message": "늅이늅이",
+          "messageId": "MC4zNzE3MDMzNzc2MDc0MzIxJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA4JTNBNDUlM0EwMS4xNTVaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFQiU4QSU4NSVFQyU5RCVCNCVFQiU4QSU4NSVFQyU5RCVCNCUy"
+        }
+      ],
+      "id": 8
     }
   ],
   "chatMembers": [
@@ -352,6 +398,15 @@
         }
       ],
       "id": 7
+    },
+    {
+      "members": [
+        {
+          "userId": "admin",
+          "username": "Song"
+        }
+      ],
+      "id": 8
     }
   ]
 }

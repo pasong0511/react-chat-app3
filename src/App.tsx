@@ -66,7 +66,7 @@ function App() {
             },
         ];
 
-        updateChatMessage(currentSelectRoom.id, messages)
+        updateChatMessage({ id: currentSelectRoom.id, messages })
             .then(() =>
                 setMessageData({
                     id: currentSelectRoom.id,

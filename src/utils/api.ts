@@ -1,4 +1,5 @@
 import axios from "axios";
+import { IMessageData } from "../types/type";
 
 export const LOGIN_USER = {
     userId: "admin",
@@ -16,12 +17,14 @@ const addChatMessageGroup = () =>
 const addChatMemberGroup = () =>
     axios.post(`${API_URL}/chatMembers`, { members: [LOGIN_USER] });
 
-export const fetchChatMember = (id) =>
+export const fetchChatMember = (id: number) =>
     axios.get(`${API_URL}/chatMembers/${id}`);
 
-const deleteChatMessage = (id) => axios.delete(`${API_URL}/chatMessages/${id}`);
+const deleteChatMessage = (id: number) =>
+    axios.delete(`${API_URL}/chatMessages/${id}`);
 
-const deleteChatMember = (id) => axios.delete(`${API_URL}/chatMembers/${id}`);
+const deleteChatMember = (id: number) =>
+    axios.delete(`${API_URL}/chatMembers/${id}`);
 
 export const getChatRooms = () =>
     axios
@@ -30,7 +33,7 @@ export const getChatRooms = () =>
         .catch(console.error);
 
 //1. 채팅방 생성 -> 2. 채팅방 메시지 생성 -> 3. 채팅방 멤버 생성
-export const addChatRoom = (roomTitle) =>
+export const addChatRoom = (roomTitle: string) =>
     axios
         .post(`${API_URL}/chatRooms`, {
             roomTitle,
@@ -41,17 +44,17 @@ export const addChatRoom = (roomTitle) =>
         .catch(console.error);
 
 //1. 채팅방 삭제 -> 3. 채팅방 메신저 삭제 -> 3. 채팅방 멤버 삭제
-export const deleteChatRoom = (id) =>
+export const deleteChatRoom = (id: number) =>
     axios
         .delete(`${API_URL}/chatRooms/${id}`)
         .then(() => deleteChatMessage(id))
         .then(() => deleteChatMember(id))
         .catch(console.error);
 
-export const updateChatMessage = (id, messages) =>
+export const updateChatMessage = ({ id, messages }: IMessageData) =>
     axios.patch(`${API_URL}/chatMessages/${id}`, {
         messages,
     });
 
-export const getChatMessage = (id) =>
+export const getChatMessage = (id: number) =>
     axios.get(`${API_URL}/chatMessages/${id}`).catch(console.error);
