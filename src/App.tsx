@@ -121,7 +121,7 @@ function App() {
 
     return (
         <div className="App">
-            <div className="chat_main">
+            <div className="chat-main">
                 <ChatTemplate style={{ minWidth: "250px" }}>
                     <button onClick={handleOpenAddRoom}>새로운방</button>
                     {newRoomToggle && (

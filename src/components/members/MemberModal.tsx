@@ -7,9 +7,12 @@ interface IMemberModalProps {
 
 function MemberModal({ title, children }: IMemberModalProps) {
     return (
-        <div style={{ width: "200px", maxWidth: "200px" }} className="modal">
+        <div
+            style={{ width: "200px", maxWidth: "200px" }}
+            className="modal member-view"
+        >
             <header>
-                <div className="modal_header_group">
+                <div className="modal-header-group">
                     <h1 className="content-title">{title}</h1>
                 </div>
             </header>

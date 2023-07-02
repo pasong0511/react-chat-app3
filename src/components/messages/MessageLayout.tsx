@@ -25,20 +25,22 @@ const MessageLayout = ({
     return (
         <>
             <div style={{ minWidth: "300px" }} className="modal">
-                <div className="modal_wrapper">
+                <div className="modal-wrapper">
                     {currentSelectRoom && (
                         <>
                             <header>
-                                <div className="modal_header_group">
-                                    <h1 className="content-title">
+                                <div className="modal-header-group">
+                                    <div className="content-title">
                                         {currentSelectRoom.roomTitle}
-                                    </h1>
-                                    <button onClick={handleCloseRoom}>
-                                        나가기
-                                    </button>
-                                    <button onClick={memberViewClose}>
-                                        멤버보기
-                                    </button>
+                                    </div>
+                                    <div>
+                                        <button onClick={handleCloseRoom}>
+                                            나가기
+                                        </button>
+                                        <button onClick={memberViewClose}>
+                                            멤버보기
+                                        </button>
+                                    </div>
                                 </div>
                             </header>
                             <div className="modal_content">{children}</div>

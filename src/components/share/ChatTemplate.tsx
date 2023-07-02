@@ -7,7 +7,7 @@ interface IChatTemplateProps {
 
 function ChatTemplate({ style, children }: IChatTemplateProps) {
     return (
-        <div style={style} className="chat_content">
+        <div style={style} className="chat-content">
             {children}
         </div>
     );
