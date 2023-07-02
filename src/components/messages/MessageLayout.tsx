@@ -3,14 +3,10 @@ import { useState } from "react";
 import MemberList from "../members/MemberList";
 import MemberModal from "../members/MemberModal";
 
-type $$currentSelectRoom = {
-    createdAt: string;
-    id: number;
-    roomTitle: string;
-};
+import { $$Room } from "../../types/type";
 
-interface IMessageLayout {
-    currentSelectRoom: $$currentSelectRoom;
+interface IMessageLayoutProps {
+    currentSelectRoom?: $$Room;
     handleCloseRoom: () => void;
     children: ReactNode;
 }
@@ -19,7 +15,7 @@ const MessageLayout = ({
     currentSelectRoom,
     handleCloseRoom,
     children,
-}: IMessageLayout) => {
+}: IMessageLayoutProps) => {
     const [memberViewOpen, setMemberViewOpen] = useState<boolean>(false);
 
     const memberViewClose = () => {
@@ -30,7 +26,7 @@ const MessageLayout = ({
         <>
             <div style={{ minWidth: "300px" }} className="modal">
                 <div className="modal_wrapper">
-                    {currentSelectRoom.id && (
+                    {currentSelectRoom && (
                         <>
                             <header>
                                 <div className="modal_header_group">
@@ -51,7 +47,7 @@ const MessageLayout = ({
                 </div>
             </div>
 
-            {currentSelectRoom.id && memberViewOpen && (
+            {currentSelectRoom && memberViewOpen && (
                 <MemberModal title={currentSelectRoom.roomTitle}>
                     <MemberList currentRoom={currentSelectRoom} />
                 </MemberModal>

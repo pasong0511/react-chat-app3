@@ -24,6 +24,16 @@
       "roomTitle": "ㅋㅋ",
       "createdAt": "2023-07-02T06:16:09.485Z",
       "id": 5
+    },
+    {
+      "roomTitle": "ㅋㅋㅋ",
+      "createdAt": "2023-07-02T08:13:00.335Z",
+      "id": 6
+    },
+    {
+      "roomTitle": "새로운 방",
+      "createdAt": "2023-07-02T08:30:18.415Z",
+      "id": 7
     }
   ],
   "chatMessages": [
@@ -188,9 +198,39 @@
           "timestamp": "2023-07-02T06:16:12.897Z",
           "message": "ㅋㅋ",
           "messageId": "MC40NzgzMTQ3OTYyOTM3NzQ4JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA2JTNBMTYlM0ExMi44OTdaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NSU4QiVFMyU4NSU4QiUyMiU3RA=="
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T07:51:57.184Z",
+          "message": "ㅋㅋㅋㅋ",
+          "messageId": "MC40MjAxOTI5ODMzMDY3OTk0NCU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMlQwNyUzQTUxJTNBNTcuMTg0WiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjIlRTMlODUlOEIlRTMlODUlOEIlRTMlODUlOEIlRTMlODUlOEIl"
         }
       ],
       "id": 5
+    },
+    {
+      "messages": [
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T08:13:10.558Z",
+          "message": "ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+          "messageId": "MC45NjMyODcwNDcxNDcxMzIyJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA4JTNBMTMlM0ExMC41NThaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NSU4QiVFMyU4NSU4QiVFMyU4NSU4QiVFMyU4NSU4QiVF"
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T08:30:31.661Z",
+          "message": "안녕",
+          "messageId": "MC4wMzY0Mzg2NDgwMDkwNDE1MSU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMlQwOCUzQTMwJTNBMzEuNjYxWiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjIlRUMlOTUlODglRUIlODUlOTUlMjIlN0Q="
+        }
+      ],
+      "id": 6
+    },
+    {
+      "messages": [],
+      "id": 7
     }
   ],
   "chatMembers": [
@@ -294,6 +334,24 @@
         }
       ],
       "id": 5
+    },
+    {
+      "members": [
+        {
+          "userId": "admin",
+          "username": "Song"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "members": [
+        {
+          "userId": "admin",
+          "username": "Song"
+        }
+      ],
+      "id": 7
     }
   ]
 }

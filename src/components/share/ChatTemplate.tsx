@@ -1,11 +1,11 @@
 import React, { ReactNode } from "react";
 
-interface IChatTemplate {
-    style: object;
+interface IChatTemplateProps {
+    style?: object;
     children: ReactNode;
 }
 
-function ChatTemplate({ style, children }: IChatTemplate) {
+function ChatTemplate({ style, children }: IChatTemplateProps) {
     return (
         <div style={style} className="chat_content">
             {children}

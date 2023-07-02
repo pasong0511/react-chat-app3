@@ -2,23 +2,19 @@ import { useEffect } from "react";
 import { useState } from "react";
 import ChatRoomItem from "./ChatRoomItem";
 
-type $$Room = {
-    id: number;
-    roomTitle: string;
-    createdAt: string;
-};
+import { $$Room } from "../../types/type";
 
-interface IChatRoomList {
+interface IChatRoomListProps {
     roomLists: $$Room[];
     searchRoomTitle: string;
-    onClickSelectRoom: React.Dispatch<React.SetStateAction<$$Room>>;
+    onClickSelectRoom: (value: $$Room) => void;
 }
 
 function ChatRoomList({
     roomLists,
     searchRoomTitle,
     onClickSelectRoom,
-}: IChatRoomList) {
+}: IChatRoomListProps) {
     const [newRoomLists, setNewRoomLists] = useState<$$Room[]>(roomLists);
 
     useEffect(() => {
@@ -26,7 +22,7 @@ function ChatRoomList({
     }, [roomLists]);
 
     if (!roomLists) {
-        return;
+        return null;
     }
 
     const searchRoomLists = newRoomLists.filter(

@@ -11,6 +11,8 @@ import ChatRoomList from "./components/rooms/ChatRoomList";
 //채팅 메시지
 import MessageList from "./components/messages/MessageList";
 import MessageLayout from "./components/messages/MessageLayout";
+
+//API 요청
 import {
     LOGIN_USER,
     getChatRooms,
@@ -20,25 +22,32 @@ import {
     getChatMessage,
 } from "./utils/api";
 
-//멤버
+import { $$Room, IMessageData } from "./types/type";
 
 function App() {
-    const [roomLists, setRoomLists] = useState([]); //전체 채팅방 목록
-    const [messageData, setMessageData] = useState({}); //채팅방에 1개에 따른 메시지 데이터
-    //const [currentSelectRoom, setCurrentSelectRoom] = useState<$$Room>({}); //헌재 선택한 룸
-    const [currentSelectRoom, setCurrentSelectRoom] = useState({}); //헌재 선택한 룸
-    const [searchRoomTitle, setSearchRoomTitle] = useState("");
-    const [newRoomToggle, setNewRoomToggle] = useState(false);
+    const [roomLists, setRoomLists] = useState<$$Room[]>([]); //전체 채팅방 목록
+    const [messageData, setMessageData] = useState<IMessageData>(); //채팅방에 1개에 따른 메시지 데이터
+    const [currentSelectRoom, setCurrentSelectRoom] = useState<$$Room>(); //헌재 선택한 룸
+    const [searchRoomTitle, setSearchRoomTitle] = useState<string>("");
+    const [newRoomToggle, setNewRoomToggle] = useState<boolean>(false);
 
-    const handleCreateChatRoom = (roomTitle) =>
+    const handleCreateChatRoom = (roomTitle: string) =>
         addChatRoom(roomTitle).then(getChatRooms).then(setRoomLists);
 
-    const handleCloseRoom = () =>
+    const handleCloseRoom = () => {
+        if (!currentSelectRoom) {
+            return;
+        }
         deleteChatRoom(currentSelectRoom.id)
             .then(getChatRooms)
             .then(setRoomLists);
+    };
 
-    const handleSendMessage = (newText) => {
+    const handleSendMessage = (newText: string) => {
+        if (!currentSelectRoom || !messageData) {
+            return;
+        }
+
         const newMessage = {
             userId: LOGIN_USER.userId,
             username: LOGIN_USER.username,
@@ -71,7 +80,7 @@ function App() {
             });
     };
 
-    const handelSearchRooms = (roomTitle) => {
+    const handelSearchRooms = (roomTitle: string) => {
         console.log(roomTitle);
         setSearchRoomTitle(roomTitle);
     };
@@ -89,24 +98,21 @@ function App() {
     useEffect(() => {
         const aliveRoomIds = roomLists.map((room) => room.id);
         if (aliveRoomIds.length === 0) {
-            setCurrentSelectRoom({});
+            setCurrentSelectRoom(undefined);
             return;
         }
-        if (
-            currentSelectRoom.id &&
-            aliveRoomIds.includes(currentSelectRoom.id)
-        ) {
+        if (currentSelectRoom && aliveRoomIds.includes(currentSelectRoom.id)) {
             return;
         }
         const last = roomLists[roomLists.length - 1];
         setCurrentSelectRoom(last);
-    }, [currentSelectRoom.id, roomLists]);
+    }, [currentSelectRoom, roomLists]);
 
     //채팅방 대화정보 데이터 패칭
     useEffect(() => {
         if (currentSelectRoom?.id) {
             getChatMessage(currentSelectRoom.id)
-                .then((res) => {
+                .then((res: any) => {
                     setMessageData(res.data);
                 })
                 .catch(console.error);
@@ -139,7 +145,7 @@ function App() {
                         currentSelectRoom={currentSelectRoom}
                         handleCloseRoom={handleCloseRoom}
                     >
-                        <MessageList messageData={messageData} />
+                        <MessageList messages={messageData?.messages} />
                         <InputTxt
                             onChangeTxt={handleSendMessage}
                             placeholderValue={"메시지 입력 후 엔터"}

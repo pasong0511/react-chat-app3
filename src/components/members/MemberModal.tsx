@@ -1,11 +1,11 @@
 import React, { ReactNode } from "react";
 
-interface IMemberModal {
+interface IMemberModalProps {
     title: string;
     children: ReactNode;
 }
 
-function MemberModal({ title, children }: IMemberModal) {
+function MemberModal({ title, children }: IMemberModalProps) {
     return (
         <div style={{ width: "200px", maxWidth: "200px" }} className="modal">
             <header>

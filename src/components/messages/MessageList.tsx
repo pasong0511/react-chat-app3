@@ -1,26 +1,14 @@
 import { LOGIN_USER } from "../../utils/api";
+import { $$Message } from "../../types/type";
 
-type $$Message = {
-    message: string;
-    messageId: number;
-    timestamp: string;
-    userId: string;
-    username: string;
-};
-
-interface IMessageList {
-    id: number;
-    messages: $$Message[];
+interface IMessageDataProps {
+    messages?: $$Message[];
 }
 
-interface IMessageData {
-    messageData: IMessageList;
-}
-
-function MessageList({ messageData }: IMessageData) {
+function MessageList({ messages = [] }: IMessageDataProps) {
     return (
         <div className="chatroom">
-            {messageData.messages?.map((message: $$Message) => (
+            {messages.map((message) => (
                 <div
                     key={message.messageId}
                     className={`message ${

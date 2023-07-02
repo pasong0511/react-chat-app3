@@ -1,10 +1,10 @@
 import React from "react";
 
-interface IChatRoom {
+interface IChatRoomProps {
     roomTitle: string;
 }
 
-function ChatRoomItem({ roomTitle }: IChatRoom) {
+function ChatRoomItem({ roomTitle }: IChatRoomProps) {
     return <div>{roomTitle}</div>;
 }
 

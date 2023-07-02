@@ -1,11 +1,11 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 
-interface IInputTxt {
+interface IInputTxtProps {
     onChangeTxt: (value: string) => void;
     placeholderValue: string;
 }
 
-function InputTxt({ onChangeTxt, placeholderValue }: IInputTxt) {
+function InputTxt({ onChangeTxt, placeholderValue }: IInputTxtProps) {
     const [value, setValue] = useState("");
 
     const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {

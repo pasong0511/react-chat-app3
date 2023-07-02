@@ -4,21 +4,14 @@ import { fetchChatMember } from "../../utils/api";
 
 import MemberItem from "./MemberItem";
 
-type $$CurrentRoom = { roomTitle: string; createdAt: string; id: number };
+import { $$Room, IMembersData } from "../../types/type";
 
-interface IMemberList {
-    currentRoom: $$CurrentRoom;
+interface IMemberListProps {
+    currentRoom: $$Room;
 }
 
-type $$Members = { userId: string; username: string };
-
-interface ImembersData {
-    id: number;
-    members: $$Members[];
-}
-
-function MemberList({ currentRoom }: IMemberList) {
-    const [membersData, setMembersData] = useState<ImembersData | null>(null);
+function MemberList({ currentRoom }: IMemberListProps) {
+    const [membersData, setMembersData] = useState<IMembersData | null>(null);
 
     //채팅방 목록 데이터 패칭
     useEffect(() => {

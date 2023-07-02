@@ -1,8 +1,8 @@
-interface IMemberItem {
+interface IMemberItemProps {
     username: string;
 }
 
-function MemberItem({ username }: IMemberItem) {
+function MemberItem({ username }: IMemberItemProps) {
     return (
         <li className="member-name-item">
             <p>{username}</p>
