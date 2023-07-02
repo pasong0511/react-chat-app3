@@ -52,10 +52,12 @@
     margin: 20px;
 }
 
-.chatroom {
-    border-radius: 5px;
+.message-list-wraper {
+    height: 500px;
     padding: 20px;
     margin-bottom: 20px;
+    overflow: auto;
+    background-color: rgb(16, 82, 212);
 }
 
 .message {
