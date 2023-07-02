@@ -1,4 +1,4 @@
-import { useState, ChangeEvent, FormEvent } from "react";
+import { useState, useRef, useEffect, ChangeEvent, FormEvent } from "react";
 
 interface IInputTxtProps {
     onChangeTxt: (value: string) => void;
@@ -6,6 +6,7 @@ interface IInputTxtProps {
 }
 
 function InputTxt({ onChangeTxt, placeholderValue }: IInputTxtProps) {
+    const ref = useRef<HTMLInputElement>(null);
     const [value, setValue] = useState("");
 
     const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -18,12 +19,16 @@ function InputTxt({ onChangeTxt, placeholderValue }: IInputTxtProps) {
         setValue("");
     };
 
+    useEffect(() => {
+        ref.current?.focus();
+    }, []);
+
     return (
         <>
             <div>
                 <form onSubmit={handelCreateMessage}>
                     <input
-                        autoFocus
+                        ref={ref}
                         onChange={handleInputChange}
                         value={value}
                         placeholder={placeholderValue}
