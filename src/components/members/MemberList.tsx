@@ -22,7 +22,7 @@ function MemberList({ currentRoom }: IMemberList) {
 
     //채팅방 목록 데이터 패칭
     useEffect(() => {
-        fetchChatMember(currentRoom.id).then((res) => {
+        fetchChatMember(currentRoom.id).then((res: any) => {
             setMembersData(res.data);
         });
     }, [currentRoom]);

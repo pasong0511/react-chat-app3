@@ -14,6 +14,11 @@
       "roomTitle": "방3",
       "createdAt": "2023-07-01T13:40:34.170Z",
       "id": 3
+    },
+    {
+      "roomTitle": "뉴벙",
+      "createdAt": "2023-07-02T06:15:16.163Z",
+      "id": 4
     }
   ],
   "chatMessages": [
@@ -157,6 +162,18 @@
         }
       ],
       "id": 3
+    },
+    {
+      "messages": [
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T06:15:22.504Z",
+          "message": "ㅋㅋ",
+          "messageId": "MC43NzA1MjQyMTE3Mzk4Nzc0JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA2JTNBMTUlM0EyMi41MDRaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NSU4QiVFMyU4NSU4QiUyMiU3RA=="
+        }
+      ],
+      "id": 4
     }
   ],
   "chatMembers": [
@@ -242,6 +259,15 @@
         }
       ],
       "id": 3
+    },
+    {
+      "members": [
+        {
+          "userId": "admin",
+          "username": "Song"
+        }
+      ],
+      "id": 4
     }
   ]
 }

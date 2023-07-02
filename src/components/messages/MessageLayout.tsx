@@ -1,9 +1,26 @@
+import React, { ReactNode } from "react";
 import { useState } from "react";
 import MemberList from "../members/MemberList";
 import MemberModal from "../members/MemberModal";
 
-const MessageLayout = ({ currentSelectRoom, handleCloseRoom, children }) => {
-    const [memberViewOpen, setMemberViewOpen] = useState(false);
+type $$currentSelectRoom = {
+    createdAt: string;
+    id: number;
+    roomTitle: string;
+};
+
+interface IMessageLayout {
+    currentSelectRoom: $$currentSelectRoom;
+    handleCloseRoom: () => void;
+    children: ReactNode;
+}
+
+const MessageLayout = ({
+    currentSelectRoom,
+    handleCloseRoom,
+    children,
+}: IMessageLayout) => {
+    const [memberViewOpen, setMemberViewOpen] = useState<boolean>(false);
 
     const memberViewClose = () => {
         setMemberViewOpen(!memberViewOpen);

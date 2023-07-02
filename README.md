@@ -41,7 +41,10 @@ npx tsc ChatRoomList.tsx
 
 타입검사
 npx tsc --watch ./src/components/rooms/ChatRoomList.tsx --jsx react-jsx --esModuleInterop
+
 npx tsc --watch ./src/components/messages/MessageList.tsx --jsx react-jsx --esModuleInterop
+npx tsc --watch ./src/components/messages/MessageLayout.tsx --jsx react-jsx --esModuleInterop
+
 npx tsc --watch ./src/components/members/MemberItem.tsx --jsx react-jsx --esModuleInterop
 
 npx tsc --watch ./src/components/members/MemberList.tsx --jsx react-jsx --esModuleInterop
