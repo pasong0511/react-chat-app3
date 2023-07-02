@@ -12,7 +12,7 @@ import ChatRoomList from "./components/rooms/ChatRoomList";
 import MessageList from "./components/messages/MessageList";
 import MessageLayout from "./components/messages/MessageLayout";
 import {
-    loginUser,
+    LOGIN_USER,
     getChatRooms,
     addChatRoom,
     deleteChatRoom,
@@ -25,6 +25,7 @@ import {
 function App() {
     const [roomLists, setRoomLists] = useState([]); //전체 채팅방 목록
     const [messageData, setMessageData] = useState({}); //채팅방에 1개에 따른 메시지 데이터
+    //const [currentSelectRoom, setCurrentSelectRoom] = useState<$$Room>({}); //헌재 선택한 룸
     const [currentSelectRoom, setCurrentSelectRoom] = useState({}); //헌재 선택한 룸
     const [searchRoomTitle, setSearchRoomTitle] = useState("");
     const [newRoomToggle, setNewRoomToggle] = useState(false);
@@ -39,8 +40,8 @@ function App() {
 
     const handleSendMessage = (newText) => {
         const newMessage = {
-            userId: loginUser.userId,
-            username: loginUser.username,
+            userId: LOGIN_USER.userId,
+            username: LOGIN_USER.username,
             timestamp: new Date().toISOString(),
             message: newText,
         };

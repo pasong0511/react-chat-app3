@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const loginUser = {
+export const LOGIN_USER = {
     userId: "admin",
     username: "Song",
 };
@@ -14,7 +14,7 @@ const addChatMessageGroup = () =>
 
 //채팅 멤버 (기본) 생성
 const addChatMemberGroup = () =>
-    axios.post(`${API_URL}/chatMembers`, { members: [loginUser] });
+    axios.post(`${API_URL}/chatMembers`, { members: [LOGIN_USER] });
 
 export const fetchChatMember = (id) =>
     axios.get(`${API_URL}/chatMembers/${id}`);

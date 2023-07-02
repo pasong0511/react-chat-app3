@@ -37,7 +37,11 @@ https://www.notion.so/React-Typescript-c8911c84700543beba484f5e8f1b9d3f
 
 npm install -g json-server
 
-//todo
-//채팅방에 id 안넘겨주는거 처리
-//채팅방에 따른 빈것 입력가능한 채팅방 메시지
-//삭제 후 컴포넌트 새로고침
+npx tsc ChatRoomList.tsx
+
+타입검사
+npx tsc --watch ./src/components/rooms/ChatRoomList.tsx --jsx react-jsx --esModuleInterop
+npx tsc --watch ./src/components/messages/MessageList.tsx --jsx react-jsx --esModuleInterop
+npx tsc --watch ./src/components/members/MemberItem.tsx --jsx react-jsx --esModuleInterop
+
+npx tsc --watch ./src/components/members/MemberList.tsx --jsx react-jsx --esModuleInterop

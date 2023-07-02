@@ -2,8 +2,24 @@ import { useEffect } from "react";
 import { useState } from "react";
 import ChatRoomItem from "./ChatRoomItem";
 
-function ChatRoomList({ roomLists, searchRoomTitle, onClickSelectRoom }) {
-    const [newRoomLists, setNewRoomLists] = useState(roomLists);
+type $$Room = {
+    id: number;
+    roomTitle: string;
+    createdAt: string;
+};
+
+interface IChatRoomList {
+    roomLists: $$Room[];
+    searchRoomTitle: string;
+    onClickSelectRoom: React.Dispatch<React.SetStateAction<$$Room>>;
+}
+
+function ChatRoomList({
+    roomLists,
+    searchRoomTitle,
+    onClickSelectRoom,
+}: IChatRoomList) {
+    const [newRoomLists, setNewRoomLists] = useState<$$Room[]>(roomLists);
 
     useEffect(() => {
         setNewRoomLists(roomLists);
@@ -14,14 +30,14 @@ function ChatRoomList({ roomLists, searchRoomTitle, onClickSelectRoom }) {
     }
 
     const searchRoomLists = newRoomLists.filter(
-        (item) =>
+        (item: $$Room) =>
             !searchRoomTitle ||
             item.roomTitle.toLowerCase().includes(searchRoomTitle)
     );
 
     return (
         <ul>
-            {searchRoomLists.map((room) => (
+            {searchRoomLists.map((room: $$Room) => (
                 <li
                     className="chat-room-item"
                     key={room.id}
