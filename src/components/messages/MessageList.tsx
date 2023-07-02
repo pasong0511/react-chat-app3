@@ -17,14 +17,13 @@ function MessageItem({ message, isEned = false }: IMessageProps) {
     useEffect(() => {
         if (isEned) {
             //elem.scrollIntoView() - 특정 요소 위치로 화면 스크롤 이동하기
-            ref.current?.scrollIntoView({ behavior: "smooth" });
+            ref.current?.scrollIntoView();
         }
     }, [isEned]);
 
     return (
         <div
             ref={ref}
-            key={message.messageId}
             className={`message ${
                 message.userId === LOGIN_USER.userId ? "message-own" : ""
             }`}
@@ -43,6 +42,7 @@ function MessageList({ messages = [] }: IMessageDataProps) {
         <div className="message-list-wraper">
             {messages.map((message, idx) => (
                 <MessageItem
+                    key={message.messageId}
                     message={message}
                     isEned={idx === messages.length - 1} //마지막 인덱스인 경우
                 />

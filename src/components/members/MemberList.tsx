@@ -12,9 +12,12 @@ interface IMemberListProps {
 
 function MemberList({ currentRoom }: IMemberListProps) {
     const [membersData, setMembersData] = useState<IMembersData | null>(null);
+    const [isLoading, setIsLoading] = useState<boolean>(false);
 
     //채팅방 목록 데이터 패칭
     useEffect(() => {
+        setIsLoading(true);
+
         fetchChatMember(currentRoom.id).then((res: any) => {
             setMembersData(res.data);
         });
@@ -26,12 +29,13 @@ function MemberList({ currentRoom }: IMemberListProps) {
 
     return (
         <ul>
-            {membersData.members?.map((members) => (
-                <MemberItem
-                    key={members.userId}
-                    username={members.username}
-                ></MemberItem>
-            ))}
+            {isLoading &&
+                membersData.members?.map((members) => (
+                    <MemberItem
+                        key={members.userId}
+                        username={members.username}
+                    ></MemberItem>
+                ))}
         </ul>
     );
 }

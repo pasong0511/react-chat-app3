@@ -31,8 +31,13 @@ function App() {
     const [searchRoomTitle, setSearchRoomTitle] = useState<string>("");
     const [newRoomToggle, setNewRoomToggle] = useState<boolean>(false);
 
-    const handleCreateChatRoom = (roomTitle: string) =>
+    const handleCreateChatRoom = (roomTitle: string) => {
+        if (!roomTitle) {
+            alert("방 이름을 입력해주세요~");
+            return null;
+        }
         addChatRoom(roomTitle).then(getChatRooms).then(setRoomLists);
+    };
 
     const handleCloseRoom = () => {
         if (!currentSelectRoom) {

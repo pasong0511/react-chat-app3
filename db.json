@@ -16,19 +16,9 @@
       "id": 3
     },
     {
-      "roomTitle": "뉴벙",
-      "createdAt": "2023-07-02T06:15:16.163Z",
+      "roomTitle": "뉴비방",
+      "createdAt": "2023-07-02T13:31:10.887Z",
       "id": 4
-    },
-    {
-      "roomTitle": "ㅋㅋ",
-      "createdAt": "2023-07-02T06:16:09.485Z",
-      "id": 5
-    },
-    {
-      "roomTitle": "뉴비의방",
-      "createdAt": "2023-07-02T08:44:52.206Z",
-      "id": 8
     }
   ],
   "chatMessages": [
@@ -68,6 +58,20 @@
           "timestamp": "2023-07-01T13:44:31.727Z",
           "message": "어피치는 귀여워",
           "messageId": "MC42OTQyNjA3MDUzMzQ0MjAzJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAxVDEzJTNBNDQlM0EzMS43MjdaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFQyVCOSVCNCVFQyVCOSVCNCVFQyU5OCVBNCVFRCU4NiVBMSUy"
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:30:14.357Z",
+          "message": "춘식이 귀여유ㅗ",
+          "messageId": "MC4yNTk0NzA4ODY0MzkyODM2JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDEzJTNBMzAlM0ExNC4zNTdaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFQyVCNiU5OCVFQyU4QiU5RCVFQyU5RCVCNCUyMCVFQSVCNyU4"
+        },
+        {
+          "userId": "어피치",
+          "username": "어피치",
+          "timestamp": "2023-07-02T13:30:44.133Z",
+          "message": "무지무지의 무지무지",
+          "messageId": "MC4zNTk4MjEyNzY1MDI0MDI3JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDEzJTNBMzAlM0E0NC4xMzNaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFQiVBQyVCNCVFQyVBNyU4MCVFQiVBQyVCNCVFQyVBNyU4MCVF"
         }
       ],
       "id": 1
@@ -108,13 +112,6 @@
           "timestamp": "2023-07-01T13:41:30.485Z",
           "message": "떡튀김",
           "messageId": "MC4yNDI5ODE3MjM0MzA0NzE4NiU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMVQxMyUzQTQxJTNBMzAuNDg1WiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjIlRUIlOTYlQTElRUQlOEElODAlRUElQjklODAlMjIlN0Q="
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T03:40:55.508Z",
-          "message": "ㅎㅎㅎ",
-          "messageId": "MC45NzE5NDI0Mzk3MjgxOTA4JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDAzJTNBNDAlM0E1NS41MDhaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NSU4RSVFMyU4NSU4RSVFMyU4NSU4RSUyMiU3RA=="
         }
       ],
       "id": 2
@@ -155,20 +152,6 @@
           "timestamp": "2023-07-01T13:41:49.011Z",
           "message": "배민 ㄱㄱㄱㄱ",
           "messageId": "MC45MDI0NDc5NDQ5NDc0NzM4JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAxVDEzJTNBNDElM0E0OS4wMTFaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFRCU5NSVBQiVFQiU4RiU4NCVFQSVCNyVCOCUyMiU3RA=="
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-01T15:05:13.580Z",
-          "message": "제가 시킬께요~~",
-          "messageId": "MC4xNDMwMDMyMDMzNzU4MzQ2JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAxVDE1JTNBMDUlM0ExMy41ODBaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFQyVBMCU5QyVFQSVCMCU4MCUyMCVFQyU4QiU5QyVFRCU4MiVB"
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T03:40:48.796Z",
-          "message": "ㅋㅋㅋ",
-          "messageId": "MC40NzA2NzQ3MDIyMzI5ODI3JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDAzJTNBNDAlM0E0OC43OTZaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NSU4QiVFMyU4NSU4QiVFMyU4NSU4QiUyMiU3RA=="
         }
       ],
       "id": 3
@@ -178,246 +161,145 @@
         {
           "userId": "admin",
           "username": "Song",
-          "timestamp": "2023-07-02T06:15:22.504Z",
-          "message": "ㅋㅋ",
-          "messageId": "MC43NzA1MjQyMTE3Mzk4Nzc0JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA2JTNBMTUlM0EyMi41MDRaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NSU4QiVFMyU4NSU4QiUyMiU3RA=="
+          "timestamp": "2023-07-02T13:31:15.834Z",
+          "message": "테스트1",
+          "messageId": "MC43ODk2ODgyNzkzNTMwMTMxJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDEzJTNBMzElM0ExNS44MzRaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFRCU4NSU4QyVFQyU4QSVBNCVFRCU4QSVCODElMjIlN0Q="
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:31:17.291Z",
+          "message": "테스트2",
+          "messageId": "MC4wODk4MTU2ODQzOTI3NjUxJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDEzJTNBMzElM0ExNy4yOTFaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFRCU4NSU4QyVFQyU4QSVBNCVFRCU4QSVCODIlMjIlN0Q="
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:31:18.539Z",
+          "message": "3",
+          "messageId": "MC4wMzk4Njk0MDg1MzcyNzIzOSU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMlQxMyUzQTMxJTNBMTguNTM5WiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjIzJTIyJTdE"
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:31:18.840Z",
+          "message": "4",
+          "messageId": "MC4wMTc2MDUwNzc2MTE3NTM3ODMlN0IlMjJ1c2VySWQlMjIlM0ElMjJhZG1pbiUyMiUyQyUyMnVzZXJuYW1lJTIyJTNBJTIyU29uZyUyMiUyQyUyMnRpbWVzdGFtcCUyMiUzQSUyMjIwMjMtMDctMDJUMTMlM0EzMSUzQTE4Ljg0MFolMjIlMkMlMjJtZXNzYWdlJTIyJTNBJTIyNCUyMiU3RA=="
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:31:19.136Z",
+          "message": "5",
+          "messageId": "MC41MTc5NTI3NDQ5MzIxMyU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMlQxMyUzQTMxJTNBMTkuMTM2WiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjI1JTIyJTdE"
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:31:19.431Z",
+          "message": "6",
+          "messageId": "MC40OTAzNTIxNTI2Njk4NDkzMyU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMlQxMyUzQTMxJTNBMTkuNDMxWiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjI2JTIyJTdE"
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:31:19.802Z",
+          "message": "7",
+          "messageId": "MC44NjU1NDMyNjMyODY3MjU5JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDEzJTNBMzElM0ExOS44MDJaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMjclMjIlN0Q="
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:31:20.098Z",
+          "message": "8",
+          "messageId": "MC40NTY3MTgxODYzNjg4MDQzNSU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMlQxMyUzQTMxJTNBMjAuMDk4WiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjI4JTIyJTdE"
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:31:20.345Z",
+          "message": "9",
+          "messageId": "MC45NDM0MDgyOTIyNDU1NjQlN0IlMjJ1c2VySWQlMjIlM0ElMjJhZG1pbiUyMiUyQyUyMnVzZXJuYW1lJTIyJTNBJTIyU29uZyUyMiUyQyUyMnRpbWVzdGFtcCUyMiUzQSUyMjIwMjMtMDctMDJUMTMlM0EzMSUzQTIwLjM0NVolMjIlMkMlMjJtZXNzYWdlJTIyJTNBJTIyOSUyMiU3RA=="
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:31:21.179Z",
+          "message": "1",
+          "messageId": "MC44NzgzODc5NzUzNzE5MTczJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDEzJTNBMzElM0EyMS4xNzlaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMjElMjIlN0Q="
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:31:21.517Z",
+          "message": "2",
+          "messageId": "MC4yMjEwNTMwMjM3Mjc3NTMyNiU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMlQxMyUzQTMxJTNBMjEuNTE3WiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjIyJTIyJTdE"
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:31:22.394Z",
+          "message": "2",
+          "messageId": "MC43Njk1NTI0ODI4OTIxOTg1JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDEzJTNBMzElM0EyMi4zOTRaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMjIlMjIlN0Q="
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:31:22.749Z",
+          "message": "3",
+          "messageId": "MC42MDkzMzczNzc1NTU2NDk3JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDEzJTNBMzElM0EyMi43NDlaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMjMlMjIlN0Q="
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:31:23.007Z",
+          "message": "3",
+          "messageId": "MC43MTA0MjMyMjE0MDg4MDYyJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDEzJTNBMzElM0EyMy4wMDdaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMjMlMjIlN0Q="
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:31:23.534Z",
+          "message": "33",
+          "messageId": "MC4zMjExNjEzMjc5MjA4MTEyJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDEzJTNBMzElM0EyMy41MzRaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMjMzJTIyJTdE"
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:31:24.066Z",
+          "message": "444",
+          "messageId": "MC4xMDAzNDAxMjcxNDE4MjgyNyU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMlQxMyUzQTMxJTNBMjQuMDY2WiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjI0NDQlMjIlN0Q="
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:31:24.679Z",
+          "message": "555",
+          "messageId": "MC4yMzA0MjE0NzY3MTQ1ODMzNSU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMlQxMyUzQTMxJTNBMjQuNjc5WiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjI1NTUlMjIlN0Q="
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:31:25.577Z",
+          "message": "66",
+          "messageId": "MC42ODk5Mjc4ODUyMTQzNDI1JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDEzJTNBMzElM0EyNS41NzdaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMjY2JTIyJTdE"
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:31:26.055Z",
+          "message": "77",
+          "messageId": "MC45NjkxMDY4NDY3MDE1Nzk4JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDEzJTNBMzElM0EyNi4wNTVaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMjc3JTIyJTdE"
+        },
+        {
+          "userId": "admin",
+          "username": "Song",
+          "timestamp": "2023-07-02T13:39:17.075Z",
+          "message": "888888",
+          "messageId": "MC4yMTcyMjk4ODE2MjU5NDc3JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDEzJTNBMzklM0ExNy4wNzVaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMjg4ODg4OCUyMiU3RA=="
         }
       ],
       "id": 4
-    },
-    {
-      "messages": [
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T06:16:12.897Z",
-          "message": "ㅋㅋ",
-          "messageId": "MC40NzgzMTQ3OTYyOTM3NzQ4JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA2JTNBMTYlM0ExMi44OTdaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NSU4QiVFMyU4NSU4QiUyMiU3RA=="
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T07:51:57.184Z",
-          "message": "ㅋㅋㅋㅋ",
-          "messageId": "MC40MjAxOTI5ODMzMDY3OTk0NCU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMlQwNyUzQTUxJTNBNTcuMTg0WiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjIlRTMlODUlOEIlRTMlODUlOEIlRTMlODUlOEIlRTMlODUlOEIl"
-        }
-      ],
-      "id": 5
-    },
-    {
-      "messages": [
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T08:45:01.155Z",
-          "message": "늅이늅이",
-          "messageId": "MC4zNzE3MDMzNzc2MDc0MzIxJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA4JTNBNDUlM0EwMS4xNTVaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFQiU4QSU4NSVFQyU5RCVCNCVFQiU4QSU4NSVFQyU5RCVCNCUy"
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T08:50:17.271Z",
-          "message": "ㅋㅋ",
-          "messageId": "MC43NDU3ODY3NzQxNTAyMzExJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA4JTNBNTAlM0ExNy4yNzFaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NSU4QiVFMyU4NSU4QiUyMiU3RA=="
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T08:50:20.736Z",
-          "message": "ㅁㅁ",
-          "messageId": "MC41NzAxMzIzNzkwNzc5OTcxJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA4JTNBNTAlM0EyMC43MzZaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NSU4MSVFMyU4NSU4MSUyMiU3RA=="
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T08:50:21.473Z",
-          "message": "ㄹㄹ",
-          "messageId": "MC44ODQyODM5OTU5NTM3MjIzJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA4JTNBNTAlM0EyMS40NzNaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NCVCOSVFMyU4NCVCOSUyMiU3RA=="
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T08:50:22.291Z",
-          "message": "ㅁㄴ",
-          "messageId": "MC41NjI1MTgyMjU3ODg3NjI0JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA4JTNBNTAlM0EyMi4yOTFaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NSU4MSVFMyU4NCVCNCUyMiU3RA=="
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T08:50:22.964Z",
-          "message": "ㅂㄷㅈ",
-          "messageId": "MC44MDg3ODMzODA5Nzg3MTEzJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA4JTNBNTAlM0EyMi45NjRaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NSU4MiVFMyU4NCVCNyVFMyU4NSU4OCUyMiU3RA=="
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T08:50:23.604Z",
-          "message": "ㅂㅈㄷㅂㅈㄷ",
-          "messageId": "MC44NTM1NzQ5MzQyMDkxNzc2JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA4JTNBNTAlM0EyMy42MDRaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NSU4MiVFMyU4NSU4OCVFMyU4NCVCNyVFMyU4NSU4MiVF"
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T08:50:24.320Z",
-          "message": "ㅂㅈㄷㅂㅈㄷ",
-          "messageId": "MC40MTMyMTU4MTQyODc1MTQ2NCU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMlQwOCUzQTUwJTNBMjQuMzIwWiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjIlRTMlODUlODIlRTMlODUlODglRTMlODQlQjclRTMlODUlODIl"
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T08:50:24.948Z",
-          "message": "ㅂㅈㄷㅂㅈㄷㅂㅈㄷ",
-          "messageId": "MC4wMzMzMDEyMDI0ODgxNjk4MSU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMlQwOCUzQTUwJTNBMjQuOTQ4WiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjIlRTMlODUlODIlRTMlODUlODglRTMlODQlQjclRTMlODUlODIl"
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T08:50:25.578Z",
-          "message": "ㅂㅈㄷㅂㅈㄷㅂㅈ",
-          "messageId": "MC43ODc3MzU2NjAwNTA4MDI4JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA4JTNBNTAlM0EyNS41NzhaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NSU4MiVFMyU4NSU4OCVFMyU4NCVCNyVFMyU4NSU4MiVF"
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T08:50:26.369Z",
-          "message": "ㅂㅂㅈㄷㅂㅈㄷ",
-          "messageId": "MC44ODQxMDIyNDE4MjY0NDU1JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA4JTNBNTAlM0EyNi4zNjlaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFMyU4NSU4MiVFMyU4NSU4MiVFMyU4NSU4OCVFMyU4NCVCNyVF"
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T08:51:52.584Z",
-          "message": "마지막 메시지 입력",
-          "messageId": "MC42NTc2NTYyNjQyNjczMTk2JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA4JTNBNTElM0E1Mi41ODRaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFQiVBNyU4OCVFQyVBNyU4MCVFQiVBNyU4OSUyMCVFQiVBOSU5"
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T09:13:13.535Z",
-          "message": "마아아아지막~ㅋㅋㅋ",
-          "messageId": "MC41OTY1NTM5ODE1MDUyOTE0JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA5JTNBMTMlM0ExMy41MzVaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFQiVBNyU4OCVFQyU5NSU4NCVFQyU5NSU4NCVFQyU5NSU4NCVF"
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T09:13:16.231Z",
-          "message": "호호호뷰뷰뷰",
-          "messageId": "MC40NjI1OTQ0NTI0Nzk3MjQzJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA5JTNBMTMlM0ExNi4yMzFaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFRCU5OCVCOCVFRCU5OCVCOCVFRCU5OCVCOCVFQiVCNyVCMCVF"
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T09:25:45.816Z",
-          "message": "라스트~",
-          "messageId": "MC42NjM2Njc5NTA1NzkxNTE0JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA5JTNBMjUlM0E0NS44MTZaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMiVFQiU5RCVCQyVFQyU4QSVBNCVFRCU4QSVCOH4lMjIlN0Q="
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T09:43:03.185Z",
-          "message": "asdlknasd",
-          "messageId": "MC4wMDM5MDU5ODI5ODM5NTczOSU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMlQwOSUzQTQzJTNBMDMuMTg1WiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjJhc2Rsa25hc2QlMjIlN0Q="
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T09:43:07.666Z",
-          "message": "asdasdnklajsd",
-          "messageId": "MC40MjgzODg0OTg1OTIyMjA0JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA5JTNBNDMlM0EwNy42NjZaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMmFzZGFzZG5rbGFqc2QlMjIlN0Q="
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T09:43:09.976Z",
-          "message": "akldlaksd",
-          "messageId": "MC42NTY0Njk0MzY5OTQzOTEzJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA5JTNBNDMlM0EwOS45NzZaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMmFrbGRsYWtzZCUyMiU3RA=="
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T09:47:09.477Z",
-          "message": "sdkas;ld;las,d",
-          "messageId": "MC41NTA5ODEwODMwMjczMzYxJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA5JTNBNDclM0EwOS40NzdaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMnNka2FzJTNCbGQlM0JsYXMlMkNkJTIyJTdE"
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T09:47:13.513Z",
-          "message": "qmwdl;mqkmlwdlqkwmdl",
-          "messageId": "MC4yMzYwMzc3NjkyNzAzMjI2JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA5JTNBNDclM0ExMy41MTNaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMnFtd2RsJTNCbXFrbWx3ZGxxa3dtZGwlMjIlN0Q="
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T09:47:15.057Z",
-          "message": "lqkwmdklkwmdasd",
-          "messageId": "MC40MjY1NTc1MjQyODE0NTYzJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA5JTNBNDclM0ExNS4wNTdaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMmxxa3dtZGtsa3dtZGFzZCUyMiU3RA=="
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T09:47:16.290Z",
-          "message": "lkqwdklmqklwmdlkqwd",
-          "messageId": "MC43Nzc0MDI1OTAxOTk2MTc1JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA5JTNBNDclM0ExNi4yOTBaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMmxrcXdka2xtcWtsd21kbGtxd2QlMjIlN0Q="
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T09:47:17.572Z",
-          "message": "kopqdkpokd2opk12opdkop12d",
-          "messageId": "MC42NjE1NDQyMDUzNTEwNDcyJTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA5JTNBNDclM0ExNy41NzJaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMmtvcHFka3Bva2Qyb3BrMTJvcGRrb3AxMmQlMjIlN0Q="
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T09:47:18.680Z",
-          "message": "lkqwmkldmalksdmklam",
-          "messageId": "MC4wNzI5NjczNDkwNjU3Njg5NiU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMlQwOSUzQTQ3JTNBMTguNjgwWiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjJsa3F3bWtsZG1hbGtzZG1rbGFtJTIyJTdE"
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T09:47:19.784Z",
-          "message": "1k2;lel1;2kel;1k2e",
-          "messageId": "MC4yNjg2NjQwMDIwNDEwNzA0NCU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMlQwOSUzQTQ3JTNBMTkuNzg0WiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjIxazIlM0JsZWwxJTNCMmtlbCUzQjFrMmUlMjIlN0Q="
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T09:47:20.838Z",
-          "message": "12mdl12kldmkl1d",
-          "messageId": "MC43MDczMTA0MjQ4NzE1MjE2JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA5JTNBNDclM0EyMC44MzhaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMjEybWRsMTJrbGRta2wxZCUyMiU3RA=="
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T09:47:21.575Z",
-          "message": "2l134 ml;1m35",
-          "messageId": "MC4zMzA3NzA5MjcyMzQ4NjM4JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA5JTNBNDclM0EyMS41NzVaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMjJsMTM0JTIwbWwlM0IxbTM1JTIyJTdE"
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T09:47:22.280Z",
-          "message": "24tk;lk4523t",
-          "messageId": "MC4zMDY2NDY5MDU0ODg3NTU1JTdCJTIydXNlcklkJTIyJTNBJTIyYWRtaW4lMjIlMkMlMjJ1c2VybmFtZSUyMiUzQSUyMlNvbmclMjIlMkMlMjJ0aW1lc3RhbXAlMjIlM0ElMjIyMDIzLTA3LTAyVDA5JTNBNDclM0EyMi4yODBaJTIyJTJDJTIybWVzc2FnZSUyMiUzQSUyMjI0dGslM0JsazQ1MjN0JTIyJTdE"
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T09:47:22.721Z",
-          "message": "245tkl",
-          "messageId": "MC4zOTE5MDY5MTYzODM5NzMlN0IlMjJ1c2VySWQlMjIlM0ElMjJhZG1pbiUyMiUyQyUyMnVzZXJuYW1lJTIyJTNBJTIyU29uZyUyMiUyQyUyMnRpbWVzdGFtcCUyMiUzQSUyMjIwMjMtMDctMDJUMDklM0E0NyUzQTIyLjcyMVolMjIlMkMlMjJtZXNzYWdlJTIyJTNBJTIyMjQ1dGtsJTIyJTdE"
-        },
-        {
-          "userId": "admin",
-          "username": "Song",
-          "timestamp": "2023-07-02T09:47:23.529Z",
-          "message": "245tkl4w5gl45g",
-          "messageId": "MC4xNDAwNzE3NTM5MDY4MDA4MiU3QiUyMnVzZXJJZCUyMiUzQSUyMmFkbWluJTIyJTJDJTIydXNlcm5hbWUlMjIlM0ElMjJTb25nJTIyJTJDJTIydGltZXN0YW1wJTIyJTNBJTIyMjAyMy0wNy0wMlQwOSUzQTQ3JTNBMjMuNTI5WiUyMiUyQyUyMm1lc3NhZ2UlMjIlM0ElMjIyNDV0a2w0dzVnbDQ1ZyUyMiU3RA=="
-        }
-      ],
-      "id": 8
     }
   ],
   "chatMembers": [
@@ -512,24 +394,6 @@
         }
       ],
       "id": 4
-    },
-    {
-      "members": [
-        {
-          "userId": "admin",
-          "username": "Song"
-        }
-      ],
-      "id": 5
-    },
-    {
-      "members": [
-        {
-          "userId": "admin",
-          "username": "Song"
-        }
-      ],
-      "id": 8
     }
   ]
 }
